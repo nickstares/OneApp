@@ -1,9 +1,9 @@
 class ItemsController < ApplicationController
-  def home
+  def index
 
   end
 
   def show
-
+    @artist = Artist.find(params[:artist_id])
   end
 end
