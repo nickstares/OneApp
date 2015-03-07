@@ -1,2 +1,11 @@
 <h1>Main#signup</h1>
-<p>Find me in app/views/main/signup.html.erb</p>
+
+
+
+<%= simple_form_for(@user, url: signup_path) do |f| %>
+<%= f.input(:first_name) %>
+<%= f.input(:last_name) %>
+<%= f.input(:email) %>
+<%= f.input(:password) %>
+<%= f.submit(:submit) %>
+<% end %>
