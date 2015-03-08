@@ -1,4 +1,4 @@
-<h1>Main index</h1>
+<h1>One Application</h1>
 
 
 <% unless session[:user_id]%>
@@ -19,6 +19,29 @@
 
 <% if session[:user_id] %>
 <h3>Welcome Back <%= session[:first_name] %></h3>
+
+
+
+<hr>
+
+<%= link_to "List of Artists", artists_path %> <br>
+<%= link_to "Paintings", category_items_path(1) %> <br>
+<%= link_to "Sculptures", category_items_path(2) %> <br>
+<%= link_to "Photos", category_items_path(3) %> <br>
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
 <%= link_to "Log Out" , logout_path, method: "delete"%> 
 <% end %>
 
