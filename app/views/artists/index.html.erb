@@ -16,27 +16,38 @@
 </head>
 <body>
 
+<!-- TOP NAV -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
     <div class="navbar-header">
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group"><input type="text" class="form-control" placeholder="Search"></div>
         <!-- <button type="submit" class="btn btn-default">Submit</button> -->
       </form>
+      </div>
 
-
-
-      <ul class="nav navbar-nav navbar-right ">
-        <li><a href="http://www.linkedin.com/in/cyeung168" target="_blank"><div class="icon" data-icon="c"></div></a>
-        <li><a href="http://www.twitter.com/cyeung168/" target="_blank"><div class="icon" data-icon="d"></div></a>
-        <li><a href="http://www.instagram.com/cyeung168/" target="_blank"><div class="icon" data-icon="e"></div></a>
-        <li><a href="http://onesixeight.tumblr.com/" target="_blank"><div class="icon" data-icon="i"></div></a>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Account</a></li>
       </ul>
+    </div>
     </div>
   </div>
 </nav>
 
+<!-- END TOP NAV -->
+
+<!-- HEADER -->
+<div class="container">
+  <div class="row text-center">
+    <img src="logo.png" style="width: 300px; height: 100px; border: 1px solid;">
+  </div>
+
+</div>
+<!-- END HEADER -->
+
+<div class="container">
 <h1>Artists#index</h1>
 <p>Find me in app/views/artists/index.html.erb</p>
 <% @artists.each do |a| %>
@@ -49,6 +60,27 @@
 </p>
 <% end %>
 
+
+<%= link_to "Home", root_path %>
+
+</div>
+
+
+<!-- FOOTER -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-header">
+      <ul class=" nav navbar-nav navbar-left">
+        <p class="navbar-text">© 2015 ONE in SF</p>
+      </ul>
+    </div>
+
+    <ul class=" nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
 <!-- LINKED JQUERY FILES -->
 
@@ -64,7 +96,6 @@
   <!-- Project Linked Javascript -->
   <!-- <script src="script.js"></script> -->
 
-<%= link_to "Home", root_path %>
 </body>
 </html>
 
