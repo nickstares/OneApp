@@ -1,5 +1,5 @@
 class MainController < ApplicationController
-  
+  before_action :confirm_logged_in, only: [:home]
   before_action :prevent_login_signup, only: [:signup, :login]
 
 
@@ -12,9 +12,12 @@ class MainController < ApplicationController
 
   def create
       user = User.create(user_params)
+      
+
       if user.save
          session[:user_id] = user.id
-         flash[:good] = "Welcome"
+         
+         flash[:good] = "Welcome to One. Now you can Log In!"
          redirect_to '/'
       end
   end
@@ -67,5 +70,12 @@ class MainController < ApplicationController
          redirect_to :index
       end
    end
+
+   def confirm_logged_in
+    unless session[:user_id]
+      redirect_to login_path, alert: "Please log in"
+    end
+   end
+
 
 end
