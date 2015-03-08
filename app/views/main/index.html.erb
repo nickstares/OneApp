@@ -1,6 +1,8 @@
 <h1>One Application</h1>
 
 
+
+
 <% unless session[:user_id]%>
 
 
@@ -18,7 +20,7 @@
 <% end %>
 
 <% if session[:user_id] %>
-<h3>Welcome Back <%= session[:first_name] %></h3>
+<h3>Welcome <%= session[:first_name] %></h3>
 
 
 

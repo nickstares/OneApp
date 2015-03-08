@@ -10,17 +10,20 @@ class MainController < ApplicationController
    @user = User.new
   end
 
-  def create
-      user = User.create(user_params)
-      
-
-      if user.save
-         session[:user_id] = user.id
-         
-         flash[:good] = "Welcome to One. Now you can Log In!"
-         redirect_to '/'
+   def create
+      if User.where(email: user_params[:email]).first
+         flash[:notice] = "Sorry, this email is already taken"
+         redirect_to :signup
+      else         
+         user = User.create(user_params)
+         if user.save
+            session[:user_id] = user.id
+            flash[:good] = "Welcome to One."
+            session[:first_name] = user_params[:first_name]
+            redirect_to '/'
+         end
       end
-  end
+   end
 
 
   def login
@@ -29,7 +32,7 @@ class MainController < ApplicationController
          if found_user
             authorized_user = found_user.authenticate(params[:password])
             if authorized_user
-               flash[:good] = "Welcome"
+               flash[:good] = "Welcome to ONE"
                session[:user_id] = found_user.id
                session[:first_name] = found_user.first_name
                @user = found_user.first_name
