@@ -1,2 +1,10 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+
+<h1><%= @category.category_name %></h1>
+<br>
+<% @items.each do |i| %>
+  <% @artists.each do |a| %>
+    <% if i.artist_id == a.id %>
+      <%= link_to "#{a.first_name} #{a.last_name}", artist_item_path(a, i) %>
+    <% end %>
+  <% end %>
+<% end %>

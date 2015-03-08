@@ -1,0 +1,10 @@
+<h1> <%= "#{@artist.first_name} #{@artist.last_name}" %> </h1>
+<% @items.each do |i| %>
+<p>
+<h1>
+
+<%= link_to "#{i.title}", artist_item_path(i, @artist) %>
+
+</h1>
+</p>
+<% end %>
