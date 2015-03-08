@@ -18,12 +18,8 @@ c2 = Category.create(category_name:"Sculpture")
 c3 = Category.create(category_name:"Photography")
 
 i4 = Item.create(title: "Mango Ice Cave (Scale)", dimensions: "(284.5 x 238.8 x 101.6 cm)", medium: "Solvent transfer, acrylic, paper, and fabric on wood with tarpaulin, ladder, unicycle, mirrored Plexiglas, and metal", price: "1000", artist_id: 2, category_id: 2)
-i5 = Item.create(title: "Bed", dimenions: "167.5 x 228.5 cm", medium: "Combine: oil and pencil on pillow, quilt, and sheet, mounted on wood support", price: "1000", artist_id: 2, category_id: 2)
+i5 = Item.create(title: "Bed", dimensions: "167.5 x 228.5 cm", medium: "Combine: oil and pencil on pillow, quilt, and sheet, mounted on wood support", price: "1000", artist_id: 2, category_id: 2)
 i6 = Item.create(title: "Monogram", medium: "Combine: oil, paper, fabric, printed paper, printed reproductions, metal, wood, rubber shoe heel, and tennis ball on canvas with oil on Angora goat and rubber tire on wood platform mounted on four casters", price: "1000", artist_id: 2, category_id: 2)
 
-i7 = Item.create(title: "Bird on Money", medium: "acrylic, crayon on canvas", price: "1000", dimenions: "167.5 x 228.5 cm", artist_id: 3, category_id: 1)
-i7 = Item.create(title: "Fishing": "acrylic, crayon on canvas", price: "1000", artist_id: 3, category_id: 1, dimenions: "167.5 x 228.5 cm")
-
-
-
-
+i7 = Item.create(title: "Bird on Money", medium: "acrylic, crayon on canvas", price: "1000", dimensions: "167.5 x 228.5 cm", artist_id: 3, category_id: 1)
+i8 = Item.create(title: "Fishing", medium: "acrylic, crayon on canvas", price: "1000", artist_id: 3, category_id: 1, dimensions: "167.5 x 228.5 cm")
