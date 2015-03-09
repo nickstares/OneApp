@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'main#index'
+  resources :items do |item|
+    resources :charges, shallow: true
+  end
   get '/', to: 'main#index', as: 'index'
   get '/signup', to: 'main#signup', as: 'signup'
 

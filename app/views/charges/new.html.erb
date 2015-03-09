@@ -1,0 +1,18 @@
+<%= form_tag item_charges_path(@item) do %>
+  <article>
+  <h1><%= @item.title %></h1>
+  <h1><%= @item.price %></h1>
+
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-image="http://i.imgur.com/sT8merj.jpg"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-name="Buying From ONE"
+          data-description="<%= @item.title %>"
+          data-allow-remember-me
+          data-amount="<%= @item.price * 100 %>"
+          data-billingAddress="true"
+          data-shippingAddress="true"
+    ></script>
+<% end %>

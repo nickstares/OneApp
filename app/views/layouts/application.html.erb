@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>OneApp</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  
+
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <!-- Latest compiled and minified CSS -->
- 
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </head>
 <body>
 
@@ -28,9 +27,7 @@
 <%= yield %>
 
 
-<!-- FOXYCART -->
-<script src="//cdn.foxycart.com/myonestore/loader.js" async defer></script>
-<!-- /FOXYCART -->
+
 
 </body>
 </html>

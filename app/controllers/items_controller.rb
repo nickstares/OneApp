@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
 
 
   def bid
-   
+
   end
 
 

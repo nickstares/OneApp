@@ -21,20 +21,15 @@
 
 <br><br><br><hr>
 
-
-<!-- link example -->
-<a href="https://myonestore.foxycart.com/cart?name=<%= @item.title %>&price=<%= @item.price %>&color=red&code=sku123" class="submit btn btn-success">Add the Piece to Cart 2</a>
-<!-- form example -->
-<form action="https://myonestore.foxycart.com/cart" method="post" accept-charset="utf-8">
-<input type="hidden" name="name" value="<%= @item.title %>" />
-<input type="hidden" name="price" value="<%= @item.price %>" />
-<!-- <input type="hidden" name="code" value="sku1234" /> -->
-
-<!-- <label class="label_left">Dimension</label> -->
-<!-- <select name="size">
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-</select> -->
-<input type="submit" value="Add the Piece to Cart" class="submit btn btn-primary" />
-</form>
+<%= link_to "Buy this Item!", new_item_charge_path(@item) %>
+<!--
+<form action="" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_CeLuZf80o91uhYvVw7mj2Hpq"
+    data-amount="1000"
+    data-name="Demo Site"
+    data-description="2 widgets ($20.00)"
+    data-image="/128x128.png">
+  </script>
+</form> -->
