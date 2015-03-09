@@ -12,52 +12,16 @@
 <hr>
 
 <% if @item.reservation_time.nil?%>
+   <%= form_for reserve_path(@item,@item) do |f| %>
+   <%= f.submit "Reserve" %>
+   <% end %>
 <% else %>
-    <%= @item.reservation_time.hour  %>:<%= @item.reservation_time.min  %>:<%= @item.reservation_time.sec  %> <br>
-
+   <%= @item.reservation_time.hour  %>:<%= @item.reservation_time.min  %>:<%= @item.reservation_time.sec  %> <br>
    <%= Time.now.hour %>:<%= Time.now.min %>:<%= Time.now.sec %>   
-<p>Item already Reserved by you</p>
+   <h3>Item already Reserved - Camilo: customize text by user</h3>
 <% end %>
 
-
-
-
-
-<%= form_for reserve_path(@item,@item) do |f| %>
-<%= f.submit "Reserve" %>
-<% end %>
 
 
 
 <%= link_to "Home", root_path %>
-<br><hr>
-<%= t1 = @item.created_at %> <br>
-<%=  t2 = Time.now %> <br>
-<% time = t2 - t1 %>
-<%= a = time %> <br>
-
-   <% a = Time.at(a) %>
-   <%= a.min %> sec <%= a.sec %>
-<% if a.min == 20 %>
-   <%= "YA" %>
-<% end %>
-
-<br><br><br><hr>
-
-
-<!-- link example -->
-<a href="https://myonestore.foxycart.com/cart?name=<%= @item.title %>&price=<%= @item.price %>&color=red&code=sku123" class="submit btn btn-success">Add the Piece to Cart 2</a>
-<!-- form example -->
-<form action="https://myonestore.foxycart.com/cart" method="post" accept-charset="utf-8">
-<input type="hidden" name="name" value="<%= @item.title %>" />
-<input type="hidden" name="price" value="<%= @item.price %>" />
-<!-- <input type="hidden" name="code" value="sku1234" /> -->
-
-<!-- <label class="label_left">Dimension</label> -->
-<!-- <select name="size">
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-</select> -->
-<input type="submit" value="Add the Piece to Cart" class="submit btn btn-primary" />
-</form>
