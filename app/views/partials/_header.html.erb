@@ -8,14 +8,6 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-  <!-- Optional theme -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"> -->
-
-  <!-- Custom styles for this template -->
-  <link href="sticky-footer-navbar.css" rel="stylesheet">
-
-  <!-- Project Linked CSS -->
-  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
 
@@ -38,6 +30,18 @@
     </div>
   </div>
 </nav>
+
+<!-- Login Flash Messages -->
+<% flash.each do |key, value| %>
+ <% if key == "notice" %>
+   <%= content_tag :div, value, class: "text-center alert alert-warning" %>
+ <% elsif key == "alert" %>
+   <%= content_tag :div, value, class: "text-center alert alert-danger" %>
+ <% else %>
+   <%= content_tag :div, value, class: "text-center alert alert-success" %>
+ <% end %>
+<% end %>
+
 
 <!-- END TOP NAV -->
 
@@ -63,4 +67,4 @@
 </div>
 <!-- END HEADER -->
 
-<div class="container">
+<div class="container body-container">

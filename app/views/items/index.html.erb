@@ -1,14 +1,31 @@
+<div class="row" style="margin-top: 50px;">
+  <div class="col-lg-6">
+    <img src="placeholder.jpg" style="border: 1px solid; height: 450px; width: 555px;">
+  </div>
+  <div class="col-lg-6">
+    <h1> <%= "#{@artist.first_name} #{@artist.last_name}" %> </h1>
+    <p>
+      <strong>Medium:</strong> ee "#{artist.medium}" 
+    </p>
+    <p>
+      <strong>City:</strong> ee "#{artist.city}" 
+    </p>
 
-<h1> <%= "#{@artist.first_name} #{@artist.last_name}" %> </h1>
-<% @items.each do |i| %>
-<p>
-<h1>
+    <p>
+      <h4>About the artist</h4>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui oficia deserunt molit anim id est laborum.
+    </p>
+  </div>
+</div>
 
-<%= link_to "#{i.title}", artist_item_path(@artist, i) %>
 
-</h1>
-</p>
-<% end %>
 
-<%= link_to "Home", root_path %>
+
 
