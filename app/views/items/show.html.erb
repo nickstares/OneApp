@@ -11,15 +11,21 @@
 
 <hr>
 
+<% if @item.reservation_time.nil?%>
+<% else %>
+    <%= @item.reservation_time.hour  %>:<%= @item.reservation_time.min  %>:<%= @item.reservation_time.sec  %> <br>
+
+   <%= Time.now.hour %>:<%= Time.now.min %>:<%= Time.now.sec %>   
+<p>Item already Reserved by you</p>
+<% end %>
 
 
 
 
 
-
-
-
-
+<%= form_for reserve_path(@item,@item) do |f| %>
+<%= f.submit "Reserve" %>
+<% end %>
 
 
 
