@@ -1,3 +1,5 @@
+<%= render "partials/header" %>
+
 <h1> <%= "#{@artist.first_name} #{@artist.last_name}" %> </h1>
 <% @items.each do |i| %>
 <p>
@@ -10,3 +12,5 @@
 <% end %>
 
 <%= link_to "Home", root_path %>
+
+<%= render "partials/footer" %>
