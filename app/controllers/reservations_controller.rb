@@ -6,6 +6,7 @@ class ReservationsController < ApplicationController
          item.user_id = session[:user_id]   
          item.reservation_time = Time.now 
          item.save
+         ResetShoppingCartWorker.perform_in(10.seconds)
          redirect_to :back
       else
          flash[:notice] = "This Item is already reserved"
