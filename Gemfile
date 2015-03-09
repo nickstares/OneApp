@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'pry-rails'
 gem 'simple_form'
-gem 'acts_as_shopping_cart', '~> 0.2.1'
+# gem 'acts_as_shopping_cart', '~> 0.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -15,7 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
