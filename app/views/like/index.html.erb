@@ -1,0 +1,14 @@
+<h1>My Likes</h1>
+<hr>
+
+<div class= "row">
+<% @likes.each do |like| %>
+<% artist_id = like.artist_id %>
+<div class="col-lg-4">
+<%= link_to artist_item_path(artist_id, like) do %>
+      <%= image_tag("#{like.url}", class: "img-responsive", style: "margin-top: 10px") %>
+      <%= link_to "Remove Like", like_delete_path(like), method: :delete %>
+    <% end %>
+    </div>
+<% end %>
+</div>
