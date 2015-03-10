@@ -1,6 +1,7 @@
 class ChargesController < ApplicationController
 def new
 @item = Item.find(params[:item_id])
+@amount = @item.price * 100
 end
 
 def create
