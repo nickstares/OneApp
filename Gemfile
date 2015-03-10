@@ -4,6 +4,12 @@ gem 'pry-rails'
 gem 'simple_form'
 gem 'sidekiq'
 
+#pry
+gem 'pry'
+gem 'pry-remote'
+gem 'pry-stack_explorer'
+# gem 'pry-debugger'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
