@@ -4,7 +4,7 @@
 <%= @item.medium %>
 <%= @item.price %>
 <%= image_tag("#{@item.url}") %>
-
+<%= link_to "Like", like_path(@item), method: :post, class: "btn btn-default" %>
 
 
 <br>
@@ -17,7 +17,7 @@
    <% end %>
 <% else %>
    <%= @item.reservation_time.hour  %>:<%= @item.reservation_time.min  %>:<%= @item.reservation_time.sec  %> <br>
-   <%= Time.now.hour %>:<%= Time.now.min %>:<%= Time.now.sec %>   
+   <%= Time.now.hour %>:<%= Time.now.min %>:<%= Time.now.sec %>
    <h3>Item already Reserved</h3>
 <% end %>
 

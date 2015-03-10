@@ -4,10 +4,23 @@ class ItemsController < ApplicationController
       @items = @artist.items
    end
 
-   
-   def show 
+
+   def show
       @item = Item.find(params[:id])
    end
+
+    def like
+      user = current_deviseuser
+      item = Item.find(params[:id])
+      like = item
+      user.likes << like
+      if user.save
+        flash[:sucess] = "Liked!"
+      else
+        flash[:alert] = "Boo"
+      end
+      redirect_to :back
+    end
 
 
    def bid
