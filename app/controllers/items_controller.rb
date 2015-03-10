@@ -12,10 +12,4 @@ class ItemsController < ApplicationController
       @category = Category.find(category_id1)
    end
 
-
-   def bid
-
-   end
-
-
 end

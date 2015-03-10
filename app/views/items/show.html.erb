@@ -17,10 +17,8 @@
          <%= form_for reserve_path(@item,@item) do |f| %>
          <%= f.submit "Reserve", class: "btn btn-default" %>
          <% end %>
-      <% else %>
-         <%= @item.reservation_time.hour  %>:<%= @item.reservation_time.min  %>:<%= @item.reservation_time.sec  %> <br>
-         <%= Time.now.hour %>:<%= Time.now.min %>:<%= Time.now.sec %>   
-         <h3>Item already Reserved</h3>
+      <% else %> 
+         <h4>Item already Reserved - Camilo: customize text by user</h4>
     <% end %>
     </p>
 
@@ -28,6 +26,10 @@
       <button class="btn btn-default" type="submit">+ Collect</button>
       <button class="btn btn-default" type="submit">Share</button>
     </p>
+
+                  
+  <%= link_to "Shopping Cart", reservation_path %>
+    <p></p>
   </div>
 </div>
 

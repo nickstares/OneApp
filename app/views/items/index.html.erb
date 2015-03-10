@@ -36,6 +36,7 @@
   <% @items.each do |i| %>
   <div class="col-lg-6">
     <%= link_to artist_item_path(@artist, i) do %>
+    <%= i.title %>
       <%= image_tag("#{i.url}", class: "img-responsive") %>
     <% end %>
   </div>

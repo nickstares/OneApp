@@ -2,7 +2,14 @@ source 'https://rubygems.org'
 gem 'devise'
 gem 'pry-rails'
 gem 'simple_form'
-gem 'acts_as_shopping_cart', '~> 0.2.1'
+gem 'sidekiq'
+
+#pry
+gem 'pry'
+gem 'pry-remote'
+gem 'pry-stack_explorer'
+# gem 'pry-debugger'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
