@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'devise_invitable', '~> 1.3.4'
 gem 'devise'
 gem 'pry-rails'
 gem 'simple_form'
