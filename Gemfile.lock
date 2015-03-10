@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/stripe/stripe-ruby
+  revision: 0df1c9b1763330b66d1d99c3561ef2f1fc8eca39
+  specs:
+    stripe (1.20.1)
+      json (~> 1.8.1)
+      mime-types (>= 1.25, < 3.0)
+      rest-client (~> 1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -66,6 +75,9 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise_invitable (1.3.6)
+      actionmailer (>= 3.2.6, < 5)
+      devise (>= 3.2.0)
     erubis (2.7.0)
     execjs (2.4.0)
     globalid (0.3.3)
@@ -90,6 +102,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.11.0)
+    netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -141,6 +154,9 @@ GEM
       redis (~> 3.0, >= 3.0.4)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rest-client (1.7.3)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     sass (3.4.13)
     sass-rails (5.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -199,6 +215,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  devise_invitable (~> 1.3.4)
   jbuilder (~> 2.0)
   jquery-rails
   pg
@@ -212,6 +229,7 @@ DEPENDENCIES
   sidekiq
   simple_form
   spring
+  stripe!
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

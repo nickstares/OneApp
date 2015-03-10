@@ -19,5 +19,8 @@ Rails.application.routes.draw do
   post '/artists/:artist_id/items/:id', to: 'reservations#addToReservation', as: "reserve" #triggers the reservation
 
   get '/reservations', to: 'reservations#index', as:'reservation'
+  resources :items do |item|
+   resources :charges, shallow: true
+  end
 
 end
