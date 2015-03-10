@@ -1,0 +1,16 @@
+<div class="row">
+  <h1>Artwork by Category</h1>
+</div>
+
+<div class="row text-center">
+<% @categories.each do |c| %>
+<h3>
+  <%= link_to "#{c.category_name}", category_items_path(c) %>
+</h3>
+<% end %>
+  
+</div>
+
+
+  <div class="col-lg-6">
+</div>

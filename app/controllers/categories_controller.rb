@@ -1,6 +1,8 @@
 class CategoriesController < ApplicationController
   def index
     @categories = Category.all
+    # @items = @category.items
+    @artists = Artist.all 
   end
 
   def show

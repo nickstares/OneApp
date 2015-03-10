@@ -9,8 +9,8 @@ config.action_mailer.smtp_settings = {
   address: 'smtp.mandrillapp.com',
   port: 587,
   authentication: 'plain',
-  user_name: 'nickstares0@gmail.com',
-  password: 'MANDRILLAPIKEY'
+  user_name: ENV['MANDRILLAPIUSR'],
+  password: ENV['MANDRILLAPIKEY']
 }
   # Settings specified here will take precedence over those in config/application.rb.
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
