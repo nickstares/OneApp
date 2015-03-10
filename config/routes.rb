@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'like/index', to:'like#index', as:'likes'
+
   get 'reservations/index'
 
   devise_for :deviseusers
@@ -19,6 +21,7 @@ Rails.application.routes.draw do
   post '/artists/:artist_id/items/:id', to: 'reservations#addToReservation', as: "reserve" #triggers the reservation
 
   post 'items/:id', to: 'items#like', as: "like"
+  delete 'like/index/:like_id', to: 'like#destroy', as: 'like_delete'
 
   get '/reservations', to: 'reservations#index', as:'reservation'
   resources :items do |item|
