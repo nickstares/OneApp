@@ -13,19 +13,20 @@ class ItemsController < ApplicationController
       user = current_deviseuser
       item = Item.find(params[:id])
       like = item
+      unless user.likes.include? like
       user.likes << like
       if user.save
         flash[:sucess] = "Liked!"
       else
         flash[:alert] = "Boo"
       end
+      else
+        flash[:sucess] = "Already Liked!"
+      end
       redirect_to :back
     end
 
 
-   def bid
-
-   end
 
 
 end
