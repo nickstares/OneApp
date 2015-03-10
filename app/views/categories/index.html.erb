@@ -1,11 +1,16 @@
+<div class="row">
+  <h1>Artwork by Category</h1>
+</div>
 
-<h1><%= @category.category_name %></h1>
-<br>
-<% @items.each do |i| %>
-  <% @artists.each do |a| %>
-    <% if i.artist_id == a.id %>
-      <%= link_to "#{a.first_name} #{a.last_name}", artist_item_path(a, i) %>
-    <% end %>
-  <% end %>
+<div class="row text-center">
+<% @categories.each do |c| %>
+<h3>
+  <%= link_to "#{c.category_name}", category_items_path(c) %>
+</h3>
 <% end %>
+  
+</div>
 
+
+  <div class="col-lg-6">
+</div>

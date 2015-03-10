@@ -8,7 +8,6 @@ config.action_mailer.smtp_settings = {
   enable_starttls_auto: true,
   address: 'smtp.mandrillapp.com',
   port: 587,
-  # authentication: 'plain',
   user_name: ENV['MANDRILLAPIUSR'],
   password: ENV['MANDRILLAPIKEY']
 }
