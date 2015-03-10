@@ -6,10 +6,13 @@ class ItemsController < ApplicationController
 
 
    def show
+      @artist = Artist.find(params[:artist_id])
       @item = Item.find(params[:id])
+      category_id1 = @item.category_id
+      @category = Category.find(category_id1)
    end
 
-    def like
+  def like
       user = current_deviseuser
       item = Item.find(params[:id])
       like = item
@@ -24,9 +27,6 @@ class ItemsController < ApplicationController
         flash[:sucess] = "Already Liked!"
       end
       redirect_to :back
-    end
-
-
-
+   end
 
 end

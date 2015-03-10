@@ -1,14 +1,21 @@
 source 'https://rubygems.org'
+gem 'devise_invitable', '~> 1.3.4'
 gem 'devise'
 gem 'pry-rails'
 gem 'simple_form'
-gem 'acts_as_shopping_cart', '~> 0.2.1'
+gem 'sidekiq'
+
+#pry
+gem 'pry'
+gem 'pry-remote'
+gem 'pry-stack_explorer'
+# gem 'pry-debugger'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'bootstrap-sass', '~> 3.3.3'
 gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -16,6 +23,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
