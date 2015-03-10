@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'reservations/index'
+
   devise_for :deviseusers
   root 'main#index'
   get '/', to: 'main#index', as: 'index'
@@ -12,6 +14,12 @@ Rails.application.routes.draw do
   get '/artists', to: 'artists#index', as: 'artists' #shows all artists
   get '/categories/:category_id/items', to: "categories#index", as: "category_items" #shows all items in a category
 
+  get '/artists/:artist_id', to: 'artists#show', as:'artist'
   post '/artists/:artist_id/items/:id', to: 'reservations#addToReservation', as: "reserve" #triggers the reservation
+
+  get '/reservations', to: 'reservations#index', as:'reservation'
+  resources :items do |item|
+   resources :charges, shallow: true
+  end
 
 end
