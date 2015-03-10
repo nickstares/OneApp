@@ -1,6 +1,6 @@
-<div class="row" style="margin-top: 50px;">
+  <div class="row">
   <div class="col-lg-6">
-    <img src="placeholder.jpg" style="border: 1px solid; height: 450px; width: 555px;">
+    <img src="placeholder.jpg" style="border: 1px solid; width:390px; height:200px" class="img-responsive">
   </div>
   <div class="col-lg-6">
     <h1> <%= "#{@artist.first_name} #{@artist.last_name}" %> </h1>
@@ -22,7 +22,24 @@
       Excepteur sint occaecat cupidatat non proident, sunt in
       culpa qui oficia deserunt molit anim id est laborum.
     </p>
+
+    <p><h4>Website:</h4></p>
+    <p><a href="#">http://www.website.com</a></p>
   </div>
+  </div>
+
+<div class="row">
+  <hr class="page-divider">
+</div>
+
+<div class="row">
+  <% @items.each do |i| %>
+  <div class="col-lg-6">
+    <%= link_to artist_item_path(@artist, i) do %>
+      <%= image_tag("#{i.url}", class: "img-responsive") %>
+    <% end %>
+  </div>
+  <% end %>
 </div>
 
 
