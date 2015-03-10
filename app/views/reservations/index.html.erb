@@ -1,0 +1,8 @@
+
+<h3>Shopping Cart</h3>
+
+<%   @ReservedItems.each do |item| %>
+   <%= item.title %>
+   <%= link_to "Buy this Item!", new_item_charge_path(item) %>
+   <% end %>
+
