@@ -8,6 +8,8 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -44,14 +46,12 @@
    <%= content_tag :div, value, class: "text-center alert alert-success" %>
  <% end %>
 <% end %>
-
-
 <!-- END TOP NAV -->
 
 <!-- HEADER -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-4 col-lg-offset-4">
+    <div class="col-lg-4 col-lg-offset-4 logo">
       <center><p class="text-center" style="background: black; width: 240px; border: 1px solid; color: white; font-weight:900; font-size: 85px;">ONE</p></center>
     </div>
   </div>
@@ -60,8 +60,8 @@
   <div class="col-lg-4 col-lg-offset-4">
   <center>
   <ul class="nav nav-pills text-center" style="display: inline-block;">
-    <li role="presentation" class="active"><a href="#">Home</a></li>
-    <li role="presentation"><a href="#">Artists</a></li>
+    <li role="presentation" class="active"><%= link_to "Home", root_path %></li>
+    <li role="presentation"><%= link_to "Artists", artists_path %> <br></li>
     <li role="presentation"><a href="#">Artwork</a></li>
   </ul>
   </center>
@@ -71,3 +71,5 @@
 <!-- END HEADER -->
 
 <div class="container body-container">
+<div class="row col-lg-10 col-lg-offset-1 ">
+
