@@ -5,7 +5,6 @@ gem 'pry-rails'
 gem 'simple_form'
 gem 'sidekiq'
 
-
 #pry
 gem 'pry'
 gem 'pry-remote'

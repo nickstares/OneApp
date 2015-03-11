@@ -1,8 +1,29 @@
 
 <h3>Shopping Cart</h3>
-
+<% @total = 0 %>
 <%   @ReservedItems.each do |item| %>
    <%= item.title %>
-   <%= link_to "Buy this Item!", new_item_charge_path(item) %>
+   <%   @total += item.price %>
+   <% @user = item.user_id %>
+<%= link_to "Proceed to Checkout!", new_item_charge_path(item) %>
+<% end %>
+
+<hr>
+
+<% if @total > 0 %>
+<%= form_tag payment_path(@user) do %>
+   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-image="http://i.imgur.com/sT8merj.jpg"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-name="Buying From ONE"
+            data-description=""
+            data-allow-remember-me
+            data-amount="<%= @total * 100 %>"
+            data-billingAddress="true"
+            data-shippingAddress="true"
+   ></script> 
    <% end %>
+<% end %>
+
+
 
