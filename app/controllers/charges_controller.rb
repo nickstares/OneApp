@@ -1,5 +1,5 @@
 class ChargesController < ApplicationController
-@PurchasedItems = []
+
   def new
   @item = Item.find(params[:item_id])
   end
@@ -30,10 +30,11 @@ class ChargesController < ApplicationController
          if item.user_id == current_deviseuser[:id]
             item.purchased_date = Time.now
             item.save
-        @PurchasedItems << item
+        # @PurchasedItems << item
          end
       end
-      binding.pry
+      
+      @PurchasedItems = 
     redirect_to purchased_path(:user_id => current_deviseuser[:id])
   end
   

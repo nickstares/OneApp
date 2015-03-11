@@ -26,8 +26,8 @@ Rails.application.routes.draw do
 
   get '/reservations', to: 'reservations#index', as:'reservation'
 
-
   post '/items/:user_id/charges', to: 'charges#create', as: 'payment'
   get '/items/:user_id/charges', to: 'charges#index', as: 'purchased'
+
 
 end
