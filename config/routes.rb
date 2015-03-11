@@ -22,4 +22,7 @@ Rails.application.routes.draw do
    resources :charges, shallow: true
   end
 
+  post '/items/:user_id/charges', to: 'charges#create', as: 'payment'
+  get '/items/:user_id/charges', to: 'charges#index', as: 'purchased'
+
 end
