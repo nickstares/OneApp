@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  get 'like/index', to:'like#index', as:'likes'
+
   get 'reservations/index'
 
   devise_for :deviseusers
   root 'main#index'
+
   get '/', to: 'main#index', as: 'index'
   get '/signup', to: 'main#signup', as: 'signup'
   post '/signup', to: 'main#create', as: 'create'
@@ -18,6 +21,10 @@ Rails.application.routes.draw do
   get '/artists/:artist_id', to: 'artists#show', as:'artist'
   post '/artists/:artist_id/items/:id', to: 'reservations#addToReservation', as: "reserve" #triggers the reservation
 
+  post 'items/:id', to: 'items#like', as: "like"
+  delete 'like/index/:like_id', to: 'like#destroy', as: 'like_delete'
+
   get '/reservations', to: 'reservations#index', as:'reservation'
+
 
 end
