@@ -1,14 +1,77 @@
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag "carousel/1.jpg" %>
+    </div>
+    <div class="item">
+      <%= image_tag "carousel/2.jpg" %>
+    </div>
+    <div class="item">
+      <%= image_tag "carousel/3.jpg" %>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- END CAROUSEL -->
+
+<div class="row">
+  <hr class="page-divider">
+</div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
+  </div>
+
+  <div class="col-lg-4">
+    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
+  </div>
+
+    <div class="col-lg-4">
+    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
+  </div>
+</div>
+
+<div class="row row-marg">
+  <div class="col-lg-4">
+    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
+  </div>
+
+  <div class="col-lg-4">
+    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
+  </div>
+
+    <div class="col-lg-4">
+    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
+  </div>
+</div>
+
+
+<hr>
 
 <h1>One Application</h1>
-
 
 
 <%= link_to "Log Out Using Devise", destroy_deviseuser_session_path, method: :delete %> <br>
 <%= link_to "Log In Using Devise", new_deviseuser_session_path %> <br>
 <%= link_to "sign up using devise", new_deviseuser_registration_path %> <br>
-
-
-
 <%= link_to "invite someone", new_deviseuser_invitation_path %> <br>
 
 
@@ -26,11 +89,7 @@
 <%= link_to "Sculptures", category_items_path(2) %> <br>
 <%= link_to "Photos", category_items_path(3) %> <br>
 
-
 <hr>
-
-
-
 
 <li><h3>Must Have</h3></li>
 <li>invitations trought email - <b> Nick</b></li>

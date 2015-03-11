@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   get '/artists/:artist_id/items', to: 'items#index', as: 'artist_items' #shows all items of an artist
   get '/artists/:artist_id/items/:id', to: 'items#show', as: "artist_item"#shows the item of an artist
   get '/artists', to: 'artists#index', as: 'artists' #shows all artists
-  get '/categories/:category_id/items', to: "categories#index", as: "category_items" #shows all items in a category
+  get '/categories/:category_id/items', to: "categories#show", as: "category_items" #shows all items in a category
+  get '/categories', to: "categories#index", as: "categories"
 
   get '/artists/:artist_id', to: 'artists#show', as:'artist'
   post '/artists/:artist_id/items/:id', to: 'reservations#addToReservation', as: "reserve" #triggers the reservation
@@ -24,9 +25,6 @@ Rails.application.routes.draw do
   delete 'like/index/:like_id', to: 'like#destroy', as: 'like_delete'
 
   get '/reservations', to: 'reservations#index', as:'reservation'
-  resources :items do |item|
-   resources :charges, shallow: true
-  end
 
 
 end

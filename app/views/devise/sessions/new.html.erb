@@ -1,5 +1,9 @@
-<h2>Log in</h2>
+<div class="row">
+  <h1>Account Login</h1>
+</div>
 
+<div class="row">
+<div class="col-lg-8">
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
     <%= f.input :email, required: false, autofocus: true %>
@@ -8,8 +12,10 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
+    <%= f.button :submit, "Log in", style: "float:right, clear:both" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
+</div>
