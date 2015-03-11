@@ -53,7 +53,6 @@ class MainController < ApplicationController
       end
   end
 
-
    def logout
       flash[:notice] = "You signed out successfully!"
       session[:user_id] = nil

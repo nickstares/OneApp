@@ -27,6 +27,7 @@ class ItemsController < ApplicationController
         flash[:sucess] = "Already Liked!"
       end
       redirect_to :back
-   end
+  end
+
 
 end

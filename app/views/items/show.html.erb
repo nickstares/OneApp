@@ -13,7 +13,7 @@
     <p><strong>$<%= @item.price %></strong></p>
 
     <p>
-      <% if @item.reservation_time.nil?%>
+      <% if @item.reservation_time.nil? && @item.purchased_date.nil?%>
          <%= form_for reserve_path(@item,@item) do |f| %>
          <%= f.submit "Reserve", class: "btn btn-default" %>
          <% end %>
