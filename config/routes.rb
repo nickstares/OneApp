@@ -26,10 +26,14 @@ Rails.application.routes.draw do
 
   get '/reservations', to: 'reservations#index', as:'reservation'
 
+
   # Fix these routes - User shoulnd't be part of the route. It's in the session deviseuser
+
+
   post '/items/:user_id/charges', to: 'charges#create', as: 'payment'
   get '/charges', to: 'charges#purchased', as: 'purchased'
 
   # get '/items/charges', to: 'charges#shopping', as: 'shoppingcart'
+
 
 end

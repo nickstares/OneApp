@@ -4,7 +4,9 @@ class MainController < ApplicationController
 
 
   def index
-    
+    @items = Item.all
+
+
   end
 
   def signup
@@ -15,7 +17,7 @@ class MainController < ApplicationController
       if User.where(email: user_params[:email]).first
          flash[:notice] = "Sorry, this email is already taken"
          redirect_to :signup
-      else         
+      else
          user = User.create(user_params)
          if user.save
             session[:user_id] = user.id
@@ -37,19 +39,19 @@ class MainController < ApplicationController
                session[:user_id] = found_user.id
                session[:first_name] = found_user.first_name
                @user = found_user.first_name
-               redirect_to '/'   
+               redirect_to '/'
             else
                flash.now[:alert] = "Invalid password. Try again!"
                render :index
             end
-         
-         else   
+
+         else
             flash.now[:alert] = "User not found. Try again!"
             render :index
          end
       else
       flash.now[:notice] = "Type your password"
-         render :index  
+         render :index
       end
   end
 

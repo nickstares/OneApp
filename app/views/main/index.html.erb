@@ -9,13 +9,13 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag "carousel/1.jpg" %>
+      <%= image_tag "carousel/1.jpg", style: "height: 400px" %>
     </div>
     <div class="item">
-      <%= image_tag "carousel/2.jpg" %>
+      <%= image_tag "carousel/2.jpg", style: "height: 400px" %>
     </div>
     <div class="item">
-      <%= image_tag "carousel/3.jpg" %>
+      <%= image_tag "carousel/3.jpg", style: "height: 400px" %>
     </div>
   </div>
 
@@ -36,32 +36,18 @@
 </div>
 
 <div class="row">
-  <div class="col-lg-4">
-    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
-  </div>
 
-  <div class="col-lg-4">
-    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
-  </div>
-
-    <div class="col-lg-4">
-    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
-  </div>
-</div>
-
-<div class="row row-marg">
-  <div class="col-lg-4">
-    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
-  </div>
-
-  <div class="col-lg-4">
-    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
-  </div>
-
-    <div class="col-lg-4">
-    <%= image_tag "carousel/4.jpg", class: 'img-responsive' %>
-  </div>
-</div>
+  <% @items.each do |i| %>
+  <div class="col-lg-4 hover">
+  <% artist_id = i.artist_id %>
+  <%= link_to artist_item_path(artist_id, i) do %>
+    <%= image_tag("#{i.url}", class: "img-responsive") %>
+  <div class="color-overlay">
+    <div class = "details-overlay"><%= i.title %></div>
+    </div>
+    </div>
+<% end %>
+<% end %>
 
 
 <hr>
