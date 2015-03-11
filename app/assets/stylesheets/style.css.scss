@@ -26,6 +26,19 @@ a:hover{
 
 h1 {
   margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.categories-link {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 img {
@@ -73,7 +86,14 @@ top: 0;
 
 .logo {
   margin: auto;
+  background: black; 
+  width: 240px; 
+  color: white; 
+  font-weight:900; 
+  font-size: 85px;
 }
+
+.logo a:hover {}
 
 .nav-pills {
   margin-top: 15px;
