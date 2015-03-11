@@ -1,15 +1,84 @@
 
 <h1>Artists#index</h1>
 <p>Find me in app/views/artists/index.html.erb</p>
-<% @artists.each do |a| %>
-<p>
-<h1>
 
-<%= link_to "#{a.first_name} #{a.last_name}", artist_items_path(a) %>
+<div class="row">
+  
+  <div class="col-md-4">
+    <% alphabet = ["A","B","C","D","E","F","G","H","I"] %>
+       <% alphabet.each do |letter| %>
+          <hr>
+          <h3><%= letter  %></h3><br>
+          <% @artists.each do |a| %>
+            <% if a.first_name[0] == letter.upcase %>
+            <p><%= link_to "#{a.first_name} #{a.last_name}", artist_items_path(a) %></p>
+         <% end %>
+       <% end %>
+    <% end %>
+  </div>
+  
+  <div class="col-md-4">
+       <% alphabet = ["J","K","L","M","N","O","P","Q","R"] %>
+       <% alphabet.each do |letter| %>
+          <hr>
+          <h3><%= letter  %></h3><br>
+          <% @artists.each do |a| %>
+            <% if a.first_name[0] == letter.upcase %>
+            <p><%= link_to "#{a.first_name} #{a.last_name}", artist_items_path(a) %></p>
+         <% end %>
+       <% end %>
+    <% end %>
+  </div>
+  
+  <div class="col-md-4">
+     <% alphabet = ["S","T","U","V","W","X","Y","Z"] %>
+       <% alphabet.each do |letter| %>
+          <hr>
+          <h3><%= letter  %></h3><br>
+          <% @artists.each do |a| %>
+            <% if a.first_name[0] == letter.upcase %>
+            <p><%= link_to "#{a.first_name} #{a.last_name}", artist_items_path(a) %></p>
+         <% end %>
+       <% end %>
+    <% end %>
+  </div>
+</div>
 
-</h1>
-</p>
-<% end %>
+
+<hr>
+<div class="row">
+  <div class="col-md-1" heigh ></div>
+<% alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"] %>
+       <% alphabet.each do |letter| %>
+         <div class="col-md-2" height="242"> <h3><%= letter  %></h3>
+          <% @artists.each do |a| %>
+            <% if a.first_name[0] == letter.upcase %>
+            <p><%= link_to "#{a.first_name} #{a.last_name}", artist_items_path(a) %></p>
+         <% end %>
+       <% end %></div>
+    <% end %>
+
+</div>
+
+<hr>
+<div class="table-responsive">
+  <table class="table">
+      
+         <% alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"] %>
+       <% alphabet.each do |letter| %>
+      <td class="active" > <div class="col-md-2">   <h3><%= letter  %></h3>
+          <% @artists.each do |a| %>
+            <% if a.first_name[0] == letter.upcase %>
+            <p><%= link_to "#{a.first_name} #{a.last_name}", artist_items_path(a) %></p>
+         <% end %>
+       <% end %></div></td>
+    <% end %>
+
+
+
+      
+   </table>
+</div>
 
 
 <%= link_to "Home", root_path %>
