@@ -1,51 +1,118 @@
-
-/* Sticky footer styles
+/* OVERALL STYLES
 -------------------------------------------------- */
+* {
+  border-radius: 0 !important;
+}
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
+
+a {
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.categories-link {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+img {
+  overflow: hidden;
+}
+
+label {
+  display: block;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: black;
+  height: 50px;
+  background-color: #333;
   color: white;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-/*.container {
-  width: auto;
-  max-width: 680px;
-  padding: 0 15px;
-}*/
 .container .text-muted {
   margin: 20px 0;
   width: 960px;
 }
 
+/* NAVBAR
+-------------------------------------------------- */
+.navbar {
+  border:none;
+}
 .navbar-default {
 background-color: white;
-border-color: none;
+/*border-color: none;*/
 }
 
 .navbar-fixed-top {
 top: 0;
-border-width: 0 0 0px;
+/*border-width: 0 0 0px;*/
+}
+
+/* HEADER
+-------------------------------------------------- */
+
+.logo {
+  margin: auto;
+  background: black; 
+  width: 240px; 
+  color: white; 
+  font-weight:900; 
+  font-size: 85px;
+}
+
+.logo a:hover {}
+
+.nav-pills {
+  margin-top: 15px;
+  display: inline-block;
+  height: 65px;
+}
+
+.nav-pills a:hover {
+  border: 1px solid #000;
+}
+
+.nav>li>a:hover, .nav>li>a:focus{
+  background-color: white;
+  /*border: 2px solid #000;*/
 }
 
 
-/* Glyph, by Harry Roberts */
+/* PAGE DIVIDER
+-------------------------------------------------- */
 
 hr.page-divider {
     /*margin: 40px 0;*/
@@ -65,17 +132,8 @@ hr.page-divider:after {
     background: white;
 }
 
-h1 {
-  margin: 0;
-}
-
-img {
-  overflow: hidden;
-}
-
-label {
-  display: block;
-}
+/* CAROUSEL
+-------------------------------------------------- */
 
 .carousel-indicators {
   bottom:-50px;
@@ -90,10 +148,42 @@ label {
    margin-bottom:50px;
 }
 
+/* IMAGE THUMB HOVERS
+-------------------------------------------------- */
 .row-marg {
   padding-top: 30px;
 }
 
-.logo {
-  margin: auto;
+/* IMAGE THUMB HOVERS
+-------------------------------------------------- */
+textarea:focus,
+input[type="text"]:focus {  
+  border-color: #eee;
+  box-shadow: none;
+  outline: 0 none;
+}
+
+::-webkit-input-placeholder, { /* WebKit browsers */
+  padding-top: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+
 }
