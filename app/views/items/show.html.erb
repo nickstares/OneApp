@@ -1,25 +1,50 @@
+<h1><%= @item.title %></h1>
+<h3><%= "#{@artist.first_name} #{@artist.last_name} / #{@category.category_name}" %></h3>
 
-<%= @item.title %>
-<%= @item.dimensions %>
-<%= @item.medium %>
-<%= @item.price %>
-<%= image_tag("#{@item.url}") %>
+<div class="row">
+  <div class="col-lg-8">
+    <%= image_tag("#{@item.url}", class: "img-responsive") %>
+  </div>
+
+  <div class="col-lg-4">
+    <p><strong>Description</strong></p>
+    <p><%= @item.medium %></p>
+    <p><%= @item.dimensions %></p>
+    <p><strong>$<%= @item.price %></strong></p>
+
+    <p>
+      <% if @item.reservation_time.nil?%>
+         <%= form_for reserve_path(@item,@item) do |f| %>
+         <%= f.submit "Reserve", class: "btn btn-default" %>
+         <% end %>
+      <% else %>
+         <h4>Item already Reserved</h4>
+    <% end %>
+    </p>
+<!-- Camilo   -->
+  <%= link_to "Shopping Cart", reservation_path %>
+<!-- Camilo -->
+    <p><%= link_to "Like", like_path(@item), method: :post, class: "btn btn-default" %>
+</p>
+    <p>
+      <button class="btn btn-default" type="submit">+ Collect</button>
+      <button class="btn btn-default" type="submit">Share</button>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <hr class="page-divider">
+</div>
+
+<div class="row">
+  <% @artist.items.each do |i| %>
+    <div class="col-lg-4">
+      <%= link_to artist_item_path(@artist, i) do %>
+        <%= image_tag("#{i.url}", class: "img-responsive") %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
 
 
-
-<br>
-
-<hr>
-
-<% if @item.reservation_time.nil?%>
-   <%= form_for reserve_path(@item,@item) do |f| %>
-   <%= f.submit "Reserve" %>
-   <% end %>
-<% else %>
-   <%= @item.reservation_time.hour  %>:<%= @item.reservation_time.min  %>:<%= @item.reservation_time.sec  %> <br>
-   <%= Time.now.hour %>:<%= Time.now.min %>:<%= Time.now.sec %>   
-   <h3>Item already Reserved</h3>
-<% end %>
-
-
-<%= link_to "Home", root_path %>
