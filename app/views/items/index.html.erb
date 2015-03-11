@@ -1,30 +1,16 @@
   <div class="row">
   <div class="col-lg-6">
+  <!-- @artist.url -->
     <img src="placeholder.jpg" style="border: 1px solid; width:390px; height:200px" class="img-responsive">
   </div>
   <div class="col-lg-6">
     <h1> <%= "#{@artist.first_name} #{@artist.last_name}" %> </h1>
-    <p>
-      <strong>Medium:</strong> ee "#{artist.medium}" 
-    </p>
-    <p>
-      <strong>City:</strong> ee "#{artist.city}" 
-    </p>
 
     <p>
-      <h4>About the artist</h4>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in
-      culpa qui oficia deserunt molit anim id est laborum.
+      <%= @artist.artist_description %>
     </p>
 
-    <p><h4>Website:</h4></p>
-    <p><a href="#">http://www.website.com</a></p>
+
   </div>
   </div>
 

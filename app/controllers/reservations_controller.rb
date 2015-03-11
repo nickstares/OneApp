@@ -6,7 +6,7 @@ class ReservationsController < ApplicationController
          @item.user_id = current_deviseuser[:id]
          @item.reservation_time = Time.now
          @item.save
-         ResetShoppingCartWorker.perform_in(2.minute, @item.id)
+         ResetShoppingCartWorker.perform_in(40.seconds, @item.id)
          index
          redirect_to :back
       else
@@ -18,11 +18,21 @@ class ReservationsController < ApplicationController
 
    def index
       @ReservedItems = []
-      @items = Item.all
-      @items.each do |item|
-         if item.user_id == current_deviseuser[:id]
-            @ReservedItems << item
+      user = Deviseuser.find(current_deviseuser[:id])
+      purchaseditems = user.items
+      purchaseditems.each do |item|
+         unless item.reservation_time.nil?
+             @ReservedItems << item       
          end
-      end
-   end
+      end 
+   end        
+      
+      # @ReservedItems = []
+      # @items = Item.all   
+      # @items.each do |item|
+      #    if item.user_id == current_deviseuser[:id]
+      #       @ReservedItems << item
+      #    end
+      # end
+   
 end

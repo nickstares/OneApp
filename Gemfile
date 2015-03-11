@@ -4,9 +4,6 @@ gem 'devise'
 gem 'pry-rails'
 gem 'simple_form'
 gem 'sidekiq'
-# gem 'mysql2',          '~> 0.3.13', :platform => :ruby
-# gem 'jdbc-mysql',      '~> 5.1.28', :platform => :jruby
-# gem 'thinking-sphinx', '~> 3.1.0'
 
 #pry
 gem 'pry'
@@ -55,5 +52,8 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # turn off the asset request notifications in the logs
+  gem 'quiet_assets'
 end
 
