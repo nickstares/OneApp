@@ -5,24 +5,16 @@ config.action_mailer.perform_deliveries = true
 config.action_mailer.default :charset => "utf-8"
 
 config.action_mailer.smtp_settings = {
-<<<<<<< HEAD
+
     :address   => "smtp.mandrillapp.com",
-    :port      => 25, # ports 587 and 2525 are also supported with STARTTLS
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
     :enable_starttls_auto => true, # detects and uses STARTTLS
     :user_name => ENV['MANDRILLAPIUSR'],
     :password  => ENV['MANDRILLAPIKEY'], # SMTP password is any valid API key
-    :authentication => 'login', # Mandrill supports 'plain' or 'login'
-    #:domain => 'yourdomain.com', # your domain to identify your server when connecting
+    # :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    # :domain => 'http://localhost:3000', # your domain to identify your server when connecting
   }
 
-=======
-  enable_starttls_auto: true,
-  address: 'smtp.mandrillapp.com',
-  port: 587,
-  user_name: ENV['MANDRILLAPIUSR'],
-  password: ENV['MANDRILLAPIKEY']
-}
->>>>>>> 7035fb031140e8bdb719e9abe1b6a003c6ac3e6e
   # Settings specified here will take precedence over those in config/application.rb.
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # In the development environment your application's code is reloaded on
@@ -61,5 +53,5 @@ config.action_mailer.smtp_settings = {
   config.assets.raise_runtime_errors = true
 
   # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
+  config.action_view.raise_on_missing_translations = true
 end
