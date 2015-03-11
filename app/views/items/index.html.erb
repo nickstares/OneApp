@@ -5,20 +5,12 @@
   </div>
   <div class="col-lg-6">
     <h1> <%= "#{@artist.first_name} #{@artist.last_name}" %> </h1>
-    <p>
-      <strong>Medium:</strong> ee "#{artist.medium}" 
-    </p>
-    <p>
-      <strong>City:</strong> ee "#{artist.city}" 
-    </p>
 
     <p>
-      <h4>About the artist</h4>
-      @artist.description
+      <%= @artist.artist_description %>
     </p>
 
-    <p><h4>Website:</h4></p>
-    <p><a href="#">http://www.website.com</a></p>
+
   </div>
   </div>
 

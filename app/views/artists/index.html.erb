@@ -4,19 +4,16 @@
 
 <div class="row">
   <div class="col-lg-4">
-   <% @current_letter = @artist.first_name[0] %>
+
   <h1 class="artist-az"><%= "#{@current_letter}" %></h1>
-    <% @artists.each do |a| %>
-      <% if @artist.first_name[0] != @current_letter %>
+    <% @artists.each do |key,value|  %>
+
         </div>
         <div class="col-lg-4">
-        <h1 class="artist-az"><%= "#{@current_letter}" %></h1>
-        <p><%= link_to "#{a.first_name} #{a.last_name}", artist_items_path(a) %></p>
-
-        
-      <% else %>
-        <p><%= link_to "#{a.first_name} #{a.last_name}", artist_items_path(a) %></p>
-      <% end %>
+        <h1 class="artist-az"><%= key %></h1>
+            <% value.each do |v|  %>
+        <p><%= link_to "#{v.fullname}", artist_items_path(v) %></p>
+            <% end %>
     <% end %>
   </div>
 </div>
