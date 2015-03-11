@@ -1,4 +1,16 @@
 
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<h1><%= @category.category_name %></h1>
 
+<div class="row">
+<% @items.each do |i| %>
+<div class="col-lg-4">
+  <% @artists.each do |a| %>
+    <% if i.artist_id == a.id %>
+      <%= link_to artist_item_path(a, i) do %>
+      <%= image_tag("#{i.url}", class: "img-responsive") %>
+      <% end %>
+    <% end %>
+  <% end %>
+  </div>
+<% end %>
+</div>

@@ -32,7 +32,23 @@
       </div>
 
        <ul class="nav navbar-nav navbar-right">
+
         <li><a href="#">Account</a></li>
+
+        <% if deviseuser_signed_in? %>
+        <li class="navbar-text">
+          Welcome, <%= current_deviseuser[:email] %>
+        </li>
+        <li><%= link_to "Likes", likes_path %></li>
+        <li>
+        <%= link_to "Log Out", destroy_deviseuser_session_path, method: :delete %> <br>
+        </li>
+        <% else %>
+        <li>
+        <%= link_to "Log In", new_deviseuser_session_path %> <br>
+        </li>
+        <% end %>
+
       </ul>
     </div>
     </div>
@@ -54,8 +70,10 @@
 <!-- HEADER -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-4 col-lg-offset-4 logo">
-      <center><p class="text-center" style="background: black; width: 240px; border: 1px solid; color: white; font-weight:900; font-size: 85px;">ONE</p></center>
+    <div class="col-lg-4 col-lg-offset-4">
+      <%= link_to root_path, class: "logo" do %>
+      <p class="text-center" style="background: black; width: 240px; border: 1px solid; color: white; font-weight:900; font-size: 85px;">ONE</p>
+      <% end %>
     </div>
   </div>
 
@@ -65,7 +83,7 @@
   <ul class="nav nav-pills text-center" style="display: inline-block;">
     <li role="presentation" class="active"><%= link_to "Home", root_path %></li>
     <li role="presentation"><%= link_to "Artists", artists_path %> <br></li>
-    <li role="presentation"><a href="#">Artwork</a></li>
+    <li role="presentation"><%= link_to "Artwork", categories_path %></li>
   </ul>
   </center>
   </div>
@@ -73,6 +91,6 @@
 </div>
 <!-- END HEADER -->
 
-<div class="container body-container">
+<div class="container">
 <div class="row col-lg-10 col-lg-offset-1 ">
 

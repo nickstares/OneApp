@@ -1,10 +1,10 @@
 class ReservationsController < ApplicationController
-   
+
    def addToReservation
-      @item = Item.find(params[:id])      
+      @item = Item.find(params[:id])
       if @item.user_id.nil?
          @item.user_id = current_deviseuser[:id]
-         @item.reservation_time = Time.now 
+         @item.reservation_time = Time.now
          @item.save
          ResetShoppingCartWorker.perform_in(2.minute, @item.id)
          index
