@@ -24,13 +24,24 @@ a:hover{
   color: inherit;
 }
 
-h1 {
+h1, h2, h3{
   margin: 0 0 10px 0;
   padding: 0;
   text-transform: uppercase;
   font-size: 24px;
   letter-spacing: 0.1em;
   font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+h2.subtext {
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .categories-link {
@@ -183,6 +194,10 @@ input[type="button"]:focus {
   border-color: #eee;
   box-shadow: none;
   outline: 0 none;
+}
+
+input[type="button"],
+input[type="submit"] {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
