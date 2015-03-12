@@ -74,9 +74,12 @@
   <div class="col-lg-4 col-lg-offset-4">
   <center>
   <ul class="nav nav-pills text-center">
-    <li role="presentation"><%= link_to "Home", root_path %></li>
-    <li role="presentation"><%= link_to "Artwork", categories_path %></li>
-    <li role="presentation"><%= link_to "Artists", artists_path %></li>
+    <li role="presentation" id= "navigation" class="<%= is_active?(root_path) %>"> <%= link_to "Home", root_path %></li>
+    <li role="presentation" id= "navigation" class="<%= is_active?(categories_path)%>"  style="margin-left:18px"><%= link_to "Artwork", categories_path %></li>
+    <li role="presentation" id= "navigation" class="<%= is_active?(artists_path)%>" style="margin-right:3px"><%= link_to "Artists", artists_path %></li>
+
+
+
   </ul>
   </center>
   </div>

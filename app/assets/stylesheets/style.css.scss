@@ -83,10 +83,10 @@ top: 0;
 
 .logo {
   margin: auto;
-  background: black; 
-  width: 240px; 
-  color: white; 
-  font-weight:900; 
+  background: black;
+  width: 240px;
+  color: white;
+  font-weight:900;
   font-size: 85px;
 }
 
@@ -157,7 +157,7 @@ hr.page-divider:after {
 /* IMAGE THUMB HOVERS
 -------------------------------------------------- */
 textarea:focus,
-input[type="text"]:focus {  
+input[type="text"]:focus {
   border-color: #eee;
   box-shadow: none;
   outline: 0 none;
@@ -190,3 +190,10 @@ input[type="text"]:focus {
 
 /* IMAGE THUMBNAIL CROP
 -------------------------------------------------- */
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+  background-color: black;
+  border: none;
+}
+#navigation{
+  margin-right: 20px;
+}
