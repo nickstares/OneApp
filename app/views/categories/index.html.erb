@@ -2,7 +2,7 @@
   <h1>Artwork by Category</h1>
 </div>
 
-<div class="row text-center">
+<div class="row text-center hover">
 <% @categories.each do |c| %>
 <h1>
   <%= link_to "#{c.category_name}", category_items_path(c), class: "categories-link" %>
