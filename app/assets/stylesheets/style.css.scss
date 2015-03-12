@@ -55,17 +55,22 @@ label {
   display: block;
 }
 
+.btn {
+  border: none;
+}
+
 .btn-default {
   color: white;
   background-color: black;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   font-weight: 400;
   letter-spacing: 0.1em;
-  &:hover { 
+  &:hover {
     background-color: white;
-    border: 1px solid black; 
+    border: 1px solid black;
     text-decoration: none;
-    color: black;}
+    color: black;
+  }
 }
 
 
@@ -79,6 +84,8 @@ label {
   height: 50px;
   background-color: #333;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .container .text-muted {
@@ -113,8 +120,6 @@ top: 0;
   font-size: 85px;
 }
 
-.logo a:hover {}
-
 .nav-pills {
   margin-top: 15px;
   display: inline-block;
@@ -123,10 +128,11 @@ top: 0;
 
 .nav-pills a:hover {
   border: 1px solid #000;
+  background-color:white;
 }
 
 .nav>li>a:hover, .nav>li>a:focus{
-  background-color: white;
+  background-color: transparent;
   /*border: 2px solid #000;*/
 }
 
@@ -143,7 +149,7 @@ top: 0;
 -------------------------------------------------- */
 
 hr.page-divider {
-    /*margin: 40px 0;*/
+    margin: 25px 0 10px 0;
     padding: 0;
     border: none;
     border-top: 1px solid #333;
@@ -151,7 +157,8 @@ hr.page-divider {
     text-align: center;
 }
 hr.page-divider:after {
-    content: "Exclusives";
+
+    content: attr(text-insert);
     display: inline-block;
     position: relative;
     top: -0.8em;
@@ -196,6 +203,7 @@ input[type="button"]:focus {
   outline: 0 none;
 }
 
+input[type="text"],
 input[type="button"],
 input[type="submit"] {
   text-transform: uppercase;
@@ -206,7 +214,7 @@ input[type="submit"] {
 -------------------------------------------------- */
 .artist-az {
   font-weight: 900px;
-  font-size: 36px;  
+  font-size: 36px;
   margin-top: 15px;
 }
 
@@ -220,5 +228,10 @@ input[type="submit"] {
 
 .artist-name {
   font-size: 16px;
+}
+
+.stripe-button-el {
+  background-color: black;
+  background-image: none;
 }
 
