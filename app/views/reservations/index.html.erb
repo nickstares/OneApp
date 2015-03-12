@@ -1,12 +1,27 @@
 
 <h3>Shopping Cart</h3>
 <% @total = 0 %>
-<%   @ReservedItems.each do |item| %>
-   <%= item.title %>
-   <%   @total += item.price %>
-   <% @user = item.user_id %>
 
+
+<%   @ReservedItems.each do |item| %>
+   <!-- <h3><%= item.title %></h3> -->
+   <div class="col-lg-6 camilo">
+    <%= image_tag("#{item.url}", class: "img-responsive") %>
+  </div>
+   <div class="col-lg-6 ">
+      <p><strong>Description</strong></p>
+      <p><%= item.dimensions %></p>
+      <p><strong>$<%= item.price %></strong></p>
+      <%= item.title %>
+      <%   @total += item.price %>
+      <% @user = item.user_id %>
+      <% @item = item %>  
+      <%= button_to(name = "Delete from Cart", reservation_delete_path(@item), method: :delete) %>
+      
+   </div>
+  <hr>
 <% end %>
+  
 
 <hr>
 
