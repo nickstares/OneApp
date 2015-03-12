@@ -30,12 +30,12 @@
 
         <% if deviseuser_signed_in? %>
         <li class="navbar-text">
-          Welcome, <%= current_deviseuser[:email] %>
+          WELCOME <%= current_deviseuser[:email] %>
         </li>
         <li><%= link_to "Likes", likes_path %></li>
-        <li>
-        <%= link_to "Log Out", destroy_deviseuser_session_path, method: :delete %>
-        </li>
+        <li><%= link_to "Shopping Cart", reservation_path %></li>
+        <li><%= link_to "Purchased Products", purchased_path %></li>
+        <li><%= link_to "Log Out", destroy_deviseuser_session_path, method: :delete %></li>
         <% else %>
         <li>
         <%= link_to "Log In", new_deviseuser_session_path %>
@@ -43,6 +43,7 @@
         <% end %>
 
       </ul>
+    </div>
     </div>
     </div>
   </div>

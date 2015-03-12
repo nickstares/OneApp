@@ -1,8 +1,14 @@
-<h2>Ordersdsdsds Processed </h2>
+
+<h2>Orders Processed </h2>
 
 <% unless @Purchaseditems.empty?  %>
    <% @Purchaseditems.each do |item| %>
-      <%= item.title %>
+      <p><%= item.title %></p>
+      <%= image_tag("#{item.url}", class: "img-responsive") %>
+      <p><strong>Description</strong></p>
+      <p><%= item.dimensions %></p>
+      <p><strong>$<%= item.price %></strong></p>
+      
    <% end %>
 <% end %>
 
