@@ -35,6 +35,7 @@ class ChargesController < ApplicationController
   end
 
 
+
   def purchased
       @Purchaseditems = []
       user = Deviseuser.find(current_deviseuser[:id])
@@ -43,7 +44,8 @@ class ChargesController < ApplicationController
          unless item.purchased_date.nil?
              @Purchaseditems << item
          end
-      end
+
+      end   
 
   end
 

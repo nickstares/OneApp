@@ -1,14 +1,15 @@
 
-<h3>Shopping Cart</h3>
+<h3>Shopping Cart</h3><hr>
 <% @total = 0 %>
 
+<!-- DISPLAY ITEMS -->
 
 <%   @ReservedItems.each do |item| %>
-   <!-- <h3><%= item.title %></h3> -->
-   <div class="col-lg-6 camilo">
+  <div class="row">
+    <div class="col-lg-4 camilo">
     <%= image_tag("#{item.url}", class: "img-responsive") %>
-  </div>
-   <div class="col-lg-6 ">
+    </div>
+    <div class="col-lg-4 ">
       <p><strong>Description</strong></p>
       <p><%= item.dimensions %></p>
       <p><strong>$<%= item.price %></strong></p>
@@ -16,29 +17,43 @@
       <%   @total += item.price %>
       <% @user = item.user_id %>
       <% @item = item %>  
-      <%= button_to(name = "Delete from Cart", reservation_delete_path(@item), method: :delete) %>
-      
-   </div>
-  <hr>
+    </div>
+    <div class="col-lg-4 ">  
+      <%= button_to(name = "Delete from Cart", reservation_delete_path(@item), method: :delete, class: "btn btn-default" ) %>
+    </div>
+  </div>
+<hr>  
 <% end %>
-  
 
-<hr>
+<!-- TOTAL SHOPPING CART-->
 
+<div class="row">
+<div class="col-lg-5 ">
 <% if @total > 0 %>
-<%= form_tag payment_path(@user) do %>
-   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-image="http://i.imgur.com/sT8merj.jpg"
-            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-            data-name="Buying From ONE"
-            data-description=""
-            data-allow-remember-me
-            data-amount="<%= @total * 100 %>"
-            data-billingAddress="true"
-            data-shippingAddress="true"
-   ></script> 
-   <% end %>
-<% end %>
+    <div class="input-group col-lg-12">
+      <span class="input-group-addon"> Total: $</span>
+      <input type="text" class="form-control price-text" aria-label="Amount (to the nearest dollar)" placeholder= "<%= @total %>" id="exampleInputAmount" disabled>
+      <span class="input-group-addon">.00</span>
+    </div>
+</div>
 
+<!-- STRIPE PAYMENT METHOD -->
+
+<div class="col-lg-5 ">
+  <%= form_tag payment_path(@user) do %>
+     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-image="http://i.imgur.com/sT8merj.jpg"
+              data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+              data-name="Buying From ONE"
+              data-description=""
+              data-allow-remember-me
+              data-amount="<%= @total * 100 %>"
+              data-billingAddress="true"
+              data-shippingAddress="true"
+     ></script> 
+     <% end %>
+  <% end %>
+  </div>
+</div>
 
 
