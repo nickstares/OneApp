@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contact/index', as: 'contact'
+
   get 'about/index', as: 'about'
 
   get 'like/index', to:'like#index', as:'likes'
