@@ -17,7 +17,7 @@ Rails.application.configure do
     :domain => 'https://calm-sea-3644.herokuapp.com', # your domain to identify your server when connecting
   }
 
-
+  config.action_mailer.default_url_options = { host: 'calm-sea-3644.herokuapp.com' }
 
 
   # Code is not reloaded between requests.
