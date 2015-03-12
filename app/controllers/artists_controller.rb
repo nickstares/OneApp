@@ -3,15 +3,15 @@ class ArtistsController < ApplicationController
 
   def index
 
-    def group_by_letter(arr)
-      arr.reduce({}) do |hash, artist|
-        letter = artist[:first_name][0].upcase
-        hash[letter] = []
-        hash[letter] << artist
-        hash
-      end
-    end
-    @artists = group_by_letter(Artist.order("first_name"))
+    # def group_by_letter(arr)
+    #   arr.reduce({}) do |hash, artist|
+    #     letter = artist[:first_name][0].upcase
+    #     hash[letter] = []
+    #     hash[letter] << artist
+    #     hash
+    #   end
+    # end
+    @artists = Artist.order("first_name").all_grouped_by_first_initial  
 
 
   end
