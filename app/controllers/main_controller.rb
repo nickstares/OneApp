@@ -4,6 +4,7 @@ class MainController < ApplicationController
 
 
   def index
+    @onload = 'window.alert("hello")'
     @items = Item.all
 
 

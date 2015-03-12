@@ -8,9 +8,33 @@
   height: 100%;
   width: 287px;
   bottom: 0;
+
 }
 
 .details-overlay{
-
-
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  margin: 40px 20px 20px 20px;
+  font-weight: 700;
 }
+
+.hover {
+  margin-top:30px;
+/*  overflow: hidden;*/
+}
+
+.img-thumb{
+  display: block;
+  overflow: hidden;
+  width: 287px;
+  height: 287px;
+  position: relative;
+}
+
+.img-thumb img {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+

@@ -1,12 +1,11 @@
 $(document).on('ready',function(){
 
-
-
-$(".hover").hover(
-  function(){
+    console.log("POOOP")
+$(".hover").on ('mouseenter',function(){
     $(this).find(".color-overlay").css("visibility", "visible");
-  },
-  function(){
+  })
+
+ $(".hover").on ('mouseleave',function(){
     $(this).find(".color-overlay").css("visibility", "hidden");
   })
 });
