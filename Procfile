@@ -1,4 +1,2 @@
-rails: rails s
-redis: redis-server /usr/local/etc/redis.conf
-sideqik: bundle exec sidekiq
-
+web: bundle exec puma -C config/puma.rb 
+worker: bundle exec sidekiq
