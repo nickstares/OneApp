@@ -14,7 +14,7 @@ Rails.application.configure do
     :password  => ENV['MANDRILLAPIKEY'], # SMTP password is any valid API key
 
     # :authentication => 'plain', # Mandrill supports 'plain' or 'login'
-    :domain => 'https://calm-sea-3644.herokuapp.com', # your domain to identify your server when connecting
+    # :domain => 'https://calm-sea-3644.herokuapp.com', # your domain to identify your server when connecting
   }
 
   config.action_mailer.default_url_options = { host: 'calm-sea-3644.herokuapp.com' }
