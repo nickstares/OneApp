@@ -24,13 +24,24 @@ a:hover{
   color: inherit;
 }
 
-h1 {
+h1, h2, h3{
   margin: 0 0 10px 0;
   padding: 0;
   text-transform: uppercase;
   font-size: 24px;
   letter-spacing: 0.1em;
   font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+h2.subtext {
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .categories-link {
@@ -43,6 +54,20 @@ h1 {
 label {
   display: block;
 }
+
+.btn-default {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  &:hover { 
+    background-color: white;
+    border: 1px solid black; 
+    text-decoration: none;
+    color: black;}
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -105,6 +130,14 @@ top: 0;
   /*border: 2px solid #000;*/
 }
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+  background-color: black;
+  border: none;
+}
+
+#navigation{
+  margin-right: 20px;
+}
 
 /* PAGE DIVIDER
 -------------------------------------------------- */
@@ -118,7 +151,8 @@ hr.page-divider {
     text-align: center;
 }
 hr.page-divider:after {
-    content: "Exclusives";
+
+    content: attr(some-attribute-name);
     display: inline-block;
     position: relative;
     top: -0.8em;
@@ -130,6 +164,10 @@ hr.page-divider:after {
     font-weight: 700;
 }
 
+
+#SomeElement:after {
+    content: attr(text-insert);
+}
 /* CAROUSEL
 -------------------------------------------------- */
 
@@ -152,41 +190,25 @@ hr.page-divider:after {
   padding-top: 30px;
 }
 
-/* IMAGE THUMB HOVERS
+/* INPUT FIELDS
 -------------------------------------------------- */
 textarea:focus,
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
   border-color: #eee;
   box-shadow: none;
   outline: 0 none;
 }
 
-::-webkit-input-placeholder, { /* WebKit browsers */
-  padding-top: 3px;
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 12px;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 12px;
-
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 12px;
-
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 12px;
-
 }
 
-/* IMAGE THUMBNAIL CROP
+/* ARTIST#INDEX
 -------------------------------------------------- */
 .artist-az {
   font-weight: 900px;
@@ -206,10 +228,8 @@ input[type="text"]:focus {
   font-size: 16px;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+.stripe-button-el {
   background-color: black;
-  border: none;
+  background-image: none;
 }
-#navigation{
-  margin-right: 20px;
-}
+

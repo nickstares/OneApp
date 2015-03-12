@@ -41,19 +41,16 @@
   <% @exclusives.each do |i| %>
   <div class="col-lg-4 hover">
   <% artist_id = i.artist_id %>
-  <%= link_to artist_item_path(artist_id, i) do %>
-  <div class="img-thumb">
-    <%= image_tag("#{i.url}") %>
+    <%= link_to artist_item_path(artist_id, i) do %>
+    <div class="img-thumb">
+      <%= image_tag("#{i.url}") %>
     </div>
-  <div class="color-overlay">
-    <div class = "details-overlay"><%= i.title %></div>
+    <div class="color-overlay">
+      <div class = "details-overlay"><%= i.title %></div>
     </div>
-    </div>
-
+    <% end %>
+  </div>
   <% end %>
-<% end %>
-
-
 </div>
 
 
@@ -66,19 +63,6 @@
   <%= link_to "Log In Using Devise", new_deviseuser_session_path %> <br>
   <%= link_to "sign up using devise", new_deviseuser_registration_path %> <br>
   <%= link_to "invite someone", new_deviseuser_invitation_path %> <br>
-
-
-
-
-  <hr>
-
-<%= link_to "List of Artists", artists_path %> <br>
-<%= link_to "Paintings", category_items_path(1) %> <br>
-<%= link_to "Sculptures", category_items_path(2) %> <br>
-<%= link_to "Photos", category_items_path(3) %> <br>
-
-
-<hr>
 
 
 
