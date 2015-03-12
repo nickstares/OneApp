@@ -1,5 +1,7 @@
 <h1><%= @item.title %></h1>
-<h3><%= "#{@artist.first_name} #{@artist.last_name} / #{@category.category_name}" %></h3>
+<h2 class="subtext">
+  <%= link_to "#{@artist.first_name} #{@artist.last_name}", artist_items_path(@artist)  %>  / 
+  <%= link_to "#{@category.category_name}", category_items_path(@category)  %></h2>
 
 <div class="row">
   <div class="col-lg-8">
@@ -13,10 +15,10 @@
   <% if user = current_deviseuser %>
     <p> <% if @item.reservation_time.nil? && @item.purchased_date.nil?%>
          <%= form_for reserve_path(@item,@item) do |f| %>
-         <%= f.submit "Add to cart", class: "btn btn-default" %>
+         <%= f.submit "Add to Cart", class: "btn btn-default" %>
          <% end %>
       <% else %>
-         <h4>Item already Reserved</h4>
+         <h3>Item reserved in shopping cart for purchase</h3>
     <% end %>
 
     </p>
