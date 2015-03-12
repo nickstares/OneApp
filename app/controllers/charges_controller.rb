@@ -17,6 +17,7 @@ class ChargesController < ApplicationController
       :description => 'Rails Stripe customer',
       :currency    => 'usd'
     )
+
     @status = charge.status
     if @status == "succeeded"
         @items = Item.all
@@ -28,11 +29,11 @@ class ChargesController < ApplicationController
               item.save
            end
         end
-    purchased    
+    purchased
     end
     redirect_to :purchased
-  end  
-  
+  end
+
 
   def purchased
       @Purchaseditems = []
@@ -40,9 +41,9 @@ class ChargesController < ApplicationController
       purchaseditems = user.items
       purchaseditems.each do |item|
          unless item.purchased_date.nil?
-             @Purchaseditems << item       
+             @Purchaseditems << item
          end
-      end   
+      end
 
   end
 
@@ -51,5 +52,5 @@ class ChargesController < ApplicationController
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to root_path
-  
+
 end
