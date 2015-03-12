@@ -10,25 +10,25 @@
     <p><strong>Description</strong></p>
     <p><%= @item.dimensions %></p>
     <p><strong>$<%= @item.price %></strong></p>
-
-    <p>
-      <% if @item.reservation_time.nil? && @item.purchased_date.nil?%>
+  <% if user = current_deviseuser %>
+    <p> <% if @item.reservation_time.nil? && @item.purchased_date.nil?%>
          <%= form_for reserve_path(@item,@item) do |f| %>
          <%= f.submit "Reserve", class: "btn btn-default" %>
          <% end %>
       <% else %>
          <h4>Item already Reserved</h4>
     <% end %>
+
     </p>
 <!-- Camilo   -->
   <%= link_to "Shopping Cart", reservation_path %>
 <!-- Camilo -->
-    <p><%= link_to "Like", like_path(@item), method: :post, class: "btn btn-default" %>
-</p>
+    <p><%= link_to "Like", like_path(@item), method: :post, class: "btn btn-default" %></p>
     <p>
       <button class="btn btn-default" type="submit">+ Collect</button>
-      <button class="btn btn-default" type="submit">Share</button>
-    </p>
+      <button class="btn btn-default" type="submit">Share</button></p>
+    <% end %>
+
   </div>
 </div>
 
@@ -45,5 +45,3 @@
     </div>
   <% end %>
 </div>
-
-
