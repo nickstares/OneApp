@@ -37,20 +37,18 @@
 
 <div class="row">
 
-  <% @items.each do |i| %>
+  <% @artist.items.each do |i| %>
   <div class="col-lg-4 hover">
-  <% artist_id = i.artist_id %>
-  <%= link_to artist_item_path(artist_id, i) do %>
-  <div class="img-thumb">
-    <%= image_tag("#{i.url}") %>
+    <%= link_to artist_item_path(@artist, i) do %>
+    <div class="img-thumb">
+      <%= image_tag("#{i.url}") %>
     </div>
-  <div class="color-overlay">
-    <div class = "details-overlay"><%= i.title %></div>
+    <div class="color-overlay">
+      <div class = "details-overlay"><%= i.title %></div>
     </div>
-    </div>
-
+    <% end %>
+  </div>
   <% end %>
-<% end %>
 
 
 </div>
