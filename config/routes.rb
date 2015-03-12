@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   delete 'like/index/:like_id', to: 'like#destroy', as: 'like_delete'
 
   get '/reservations', to: 'reservations#index', as:'reservation'
+  delete '/reservations/:id', to: 'reservations#delete', as:'reservation_delete'
 
 
   # Fix these routes - User shoulnd't be part of the route. It's in the session deviseuser

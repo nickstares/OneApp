@@ -1,0 +1,8 @@
+.camilo {
+   width:90px;
+   height:45px;
+   overflow:hidden;
+   /*position: absolute;*/
+   /*clip: rect(185px, 500px, 395px, 165px);*/
+   /*           T     R      B      L*/
+}
