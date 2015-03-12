@@ -4,7 +4,7 @@ gem 'devise'
 gem 'pry-rails'
 gem 'simple_form'
 gem 'sidekiq'
-
+gem 'redis'
 #pry
 gem 'pry'
 gem 'pry-remote'
