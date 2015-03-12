@@ -14,16 +14,22 @@
 .details-overlay{
   font-size: 20px;
   letter-spacing: 0.1em;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 2px solid rgba(255,255,255,0.5);
   margin: 40px 20px 20px 20px;
   font-weight: 700;
+  color: white;
+}
+
+.remove-like{
+  margin: 20px 20px 20px 20px;
 }
 
 .hover {
   margin-top:30px;
-/*  overflow: hidden;*/
 }
 
+/* IMAGE THUMBNAIL CROP
+-------------------------------------------------- */
 .img-thumb{
   display: block;
   overflow: hidden;
