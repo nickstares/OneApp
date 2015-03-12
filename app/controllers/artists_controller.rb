@@ -2,7 +2,7 @@ class ArtistsController < ApplicationController
 
 
   def index
-    
+
     def group_by_letter(arr)
       arr.reduce({}) do |hash, artist|
         letter = artist[:first_name][0].upcase
@@ -15,7 +15,7 @@ class ArtistsController < ApplicationController
 
 
   end
-  
+
   def show
     @artist = Artist.find(params[:author_id])
   end

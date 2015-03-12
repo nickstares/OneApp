@@ -46,24 +46,24 @@
     <div class = "details-overlay"><%= i.title %></div>
     </div>
     </div>
-<% end %>
-<% end %>
+  <% end %>
+  <% end %>
+</div>
+
+  <hr>
+
+  <h1>One Application</h1>
 
 
-<hr>
-
-<h1>One Application</h1>
-
-
-<%= link_to "Log Out Using Devise", destroy_deviseuser_session_path, method: :delete %> <br>
-<%= link_to "Log In Using Devise", new_deviseuser_session_path %> <br>
-<%= link_to "sign up using devise", new_deviseuser_registration_path %> <br>
-<%= link_to "invite someone", new_deviseuser_invitation_path %> <br>
+  <%= link_to "Log Out Using Devise", destroy_deviseuser_session_path, method: :delete %> <br>
+  <%= link_to "Log In Using Devise", new_deviseuser_session_path %> <br>
+  <%= link_to "sign up using devise", new_deviseuser_registration_path %> <br>
+  <%= link_to "invite someone", new_deviseuser_invitation_path %> <br>
 
 
 
 
-<hr>
+  <hr>
 
 <%= link_to "List of Artists", artists_path %> <br>
 <%= link_to "Paintings", category_items_path(1) %> <br>
