@@ -5,8 +5,9 @@
   <% @artists.each do |key,value|  %>
     <div class="col-lg-4">
        <h1 class="artist-az"><%= key %></h1>
+       <hr class="artist-letter">
         <% value.each do |v|  %>
-          <p><%= link_to "#{v.fullname}", artist_items_path(v) %></p>
+          <p><%= link_to "#{v.fullname}", artist_items_path(v), class: "artist-name" %></p>
         <% end %>
     </div>
   <% end %>

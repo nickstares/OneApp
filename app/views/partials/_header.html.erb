@@ -25,23 +25,24 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
 
-
-       <ul class="nav navbar-nav navbar-right">
-
         <% if deviseuser_signed_in? %>
-        <li class="navbar-text">
-          WELCOME <%= current_deviseuser[:email] %>
-        </li>
+          <div class="navbar-header">
+            <ul class=" nav navbar-nav navbar-left">
+              <p class="navbar-text">Welcome <%= current_deviseuser[:email] %></p>
+            </ul>
+          </div>
+        <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Likes", likes_path %></li>
         <li><%= link_to "Shopping Cart", reservation_path %></li>
         <li><%= link_to "Purchased Products", purchased_path %></li>
         <li><%= link_to "Log Out", destroy_deviseuser_session_path, method: :delete %></li>
         <% else %>
+        <ul class="nav navbar-nav navbar-right">
         <li>
         <%= link_to "Log In", new_deviseuser_session_path %>
         </li>
         <% end %>
-
+</ul>
       </ul>
     </div>
     </div>
