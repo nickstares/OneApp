@@ -61,9 +61,9 @@ label {
   border: 1px solid white;
   font-weight: 400;
   letter-spacing: 0.1em;
-  &:hover { 
+  &:hover {
     background-color: white;
-    border: 1px solid black; 
+    border: 1px solid black;
     text-decoration: none;
     color: black;}
 }
@@ -79,6 +79,8 @@ label {
   height: 50px;
   background-color: #333;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .container .text-muted {
@@ -208,7 +210,7 @@ input[type="submit"] {
 -------------------------------------------------- */
 .artist-az {
   font-weight: 900px;
-  font-size: 36px;  
+  font-size: 36px;
   margin-top: 15px;
 }
 

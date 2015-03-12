@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about/index', as: 'about'
+
   get 'like/index', to:'like#index', as:'likes'
 
   get 'reservations/index'
