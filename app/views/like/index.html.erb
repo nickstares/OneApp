@@ -13,7 +13,7 @@
         <p><%= like.title %></p>
      </div>
      <div class="remove-like">
-      <p><button><%= link_to "Remove", like_delete_path(like), method: :delete %></button></p>
+      <p><%= link_to "Remove", like_delete_path(like), method: :delete, class: "btn btn-default" %></p>
      </div>
     </div>    
     <% end %>
