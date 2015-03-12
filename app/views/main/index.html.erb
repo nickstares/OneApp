@@ -37,7 +37,8 @@
 
 <div class="row">
 
-  <% @items.each do |i| %>
+
+  <% @exclusives.each do |i| %>
   <div class="col-lg-4 hover">
   <% artist_id = i.artist_id %>
   <%= link_to artist_item_path(artist_id, i) do %>

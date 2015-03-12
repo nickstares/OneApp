@@ -41,12 +41,11 @@
     <div class="col-lg-4 hover">
       <%= link_to artist_item_path(@artist, i) do %>
       <div class="img-thumb">
-        <%= image_tag("#{i.url}"%>
+        <%= image_tag("#{i.url}")%>
       </div>
       <% end %>
     <div class="color-overlay">
     <div class = "details-overlay"><%= i.title %></div>
-    </div>
     </div>
     </div>
   <% end %>
