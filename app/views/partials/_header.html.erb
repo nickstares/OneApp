@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>ONE: EXCLUSIVE ART</title>
 
   <!-- LINKED CSS FILES -->
   <!-- Latest compiled and minified CSS -->
@@ -32,9 +32,9 @@
             </ul>
           </div>
         <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Likes", likes_path %></li>
-        <li><%= link_to "Shopping Cart", reservation_path %></li>
-        <li><%= link_to "Purchased Products", purchased_path %></li>
+        <li><%= link_to "Collection", likes_path %></li>
+        <li><%= link_to "Reservations", reservation_path %></li>
+        <li><%= link_to "Purchase History", purchased_path %></li>
         <li><%= link_to "Log Out", destroy_deviseuser_session_path, method: :delete %></li>
         <% else %>
         <ul class="nav navbar-nav navbar-right">

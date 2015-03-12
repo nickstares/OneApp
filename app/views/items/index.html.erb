@@ -20,12 +20,13 @@
 
 <div class="row">
   <% @items.each do |i| %>
-  <div class="col-lg-6 hover">
+  <div class="col-lg-4 hover">
     <%= link_to artist_item_path(@artist, i) do %>
-      <%= image_tag("#{i.url}", class: "img-responsive") %>
+    <div class="img-thumb">
+      <%= image_tag("#{i.url}") %>
+    </div>
        <div class="color-overlay">
     <div class = "details-overlay"><%= i.title %></div>
-    </div>
     </div>
     <% end %>
   </div>
