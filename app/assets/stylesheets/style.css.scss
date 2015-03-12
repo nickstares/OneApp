@@ -151,7 +151,8 @@ hr.page-divider {
     text-align: center;
 }
 hr.page-divider:after {
-    content: "Exclusives";
+
+    content: attr(some-attribute-name);
     display: inline-block;
     position: relative;
     top: -0.8em;
@@ -163,6 +164,10 @@ hr.page-divider:after {
     font-weight: 700;
 }
 
+
+#SomeElement:after {
+    content: attr(text-insert);
+}
 /* CAROUSEL
 -------------------------------------------------- */
 
@@ -196,6 +201,7 @@ input[type="button"]:focus {
   outline: 0 none;
 }
 
+input[type="text"],
 input[type="button"],
 input[type="submit"] {
   text-transform: uppercase;
