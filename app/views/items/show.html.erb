@@ -1,6 +1,6 @@
 <h1><%= @item.title %></h1>
 <h2 class="subtext">
-  <%= link_to "#{@artist.first_name} #{@artist.last_name}", artist_items_path(@artist)  %>  / 
+  <%= link_to "#{@artist.first_name} #{@artist.last_name}", artist_items_path(@artist)  %>  /
   <%= link_to "#{@category.category_name}", category_items_path(@category)  %></h2>
 
 <div class="row">
@@ -31,21 +31,22 @@
 
 
 <div class="row">
-  <hr class="page-divider">
+  <hr class="page-divider" text-insert="Exclusives">
 </div>
 
 
 <div class="row">
-  <% @artist.items.each do |i| %>
-  <div class="col-lg-4 hover">
-    <%= link_to artist_item_path(@artist, i) do %>
-    <div class="img-thumb">
-      <%= image_tag("#{i.url}") %>
-    </div>
+
+  <% @exclusives.each do |i| %>
+    <div class="col-lg-4 hover">
+      <%= link_to artist_item_path(@artist, i) do %>
+      <div class="img-thumb">
+        <%= image_tag("#{i.url}")%>
+      </div>
+      <% end %>
     <div class="color-overlay">
-      <div class = "details-overlay"><%= i.title %></div>
+    <div class = "details-overlay"><%= i.title %></div>
     </div>
-  </div>
-  <% end %>
+    </div>
 <% end %>
 </div>

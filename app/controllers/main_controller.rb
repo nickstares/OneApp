@@ -6,8 +6,7 @@ class MainController < ApplicationController
   def index
     @onload = 'window.alert("hello")'
     @items = Item.all
-
-
+    @exclusives = @items[2..-1]
   end
 
   def signup

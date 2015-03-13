@@ -9,13 +9,25 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag "carousel/1.jpg", style: "height: 400px" %>
+      <%= image_tag "carousel/1.jpeg", style: "height: 400px" %>
     </div>
     <div class="item">
-      <%= image_tag "carousel/2.jpg", style: "height: 400px" %>
+      <%= image_tag "carousel/2.png", style: "height: 400px" %>
     </div>
     <div class="item">
-      <%= image_tag "carousel/3.jpg", style: "height: 400px" %>
+      <%= image_tag "carousel/3.jpeg", style: "height: 400px" %>
+    </div>
+    <div class="item">
+      <%= image_tag "carousel/4.png", style: "height: 400px" %>
+    </div>
+    <div class="item">
+      <%= image_tag "carousel/5.jpg", style: "height: 400px" %>
+    </div>
+    <div class="item">
+      <%= image_tag "carousel/6.jpg", style: "height: 400px" %>
+    </div>
+    <div class="item">
+      <%= image_tag "carousel/7.png", style: "height: 400px" %>
     </div>
   </div>
 
@@ -32,12 +44,13 @@
 <!-- END CAROUSEL -->
 
 <div class="row">
-  <hr class="page-divider">
+  <hr class="page-divider" text-insert="Exclusives">
 </div>
 
 <div class="row">
 
-  <% @items.each do |i| %>
+
+  <% @exclusives.each do |i| %>
   <div class="col-lg-4 hover">
   <% artist_id = i.artist_id %>
     <%= link_to artist_item_path(artist_id, i) do %>
