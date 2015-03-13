@@ -11,10 +11,15 @@
     <%= image_tag("#{item.url}", class: "img-responsive") %>
     </div>
     <div class="col-lg-4 ">
+      <!-- Expiration Time -->
+      <% time = Time.now + (120*60) %>
+      <p><strong>Reserved until : <%= time %></strong></p>
+      <!-- Description -->
       <p><strong>Description</strong></p>
       <p><%= item.dimensions %></p>
       <p><strong>$<%= item.price %></strong></p>
       <%= item.title %>
+      <!-- Totalize Items price -->
       <%   @total += item.price %>
       <% @user = item.user_id %>
       <% @item = item %>  
