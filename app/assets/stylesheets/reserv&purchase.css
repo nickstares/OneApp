@@ -1,13 +1,51 @@
 .camilo {
    width:200px;
-   height:125px;
+   height:175px;
    overflow:hidden;
    /*position: absolute;*/
    /*clip: rect(185px, 500px, 395px, 165px);*/
    /*           T     R      B      L*/
 }
 
-.stripe-button-el span {
-   background-image: black;
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #333;
+  border-color: #171414;
+  color: white;
 }
 
+
+.panel-title {
+     font-weight: 300;
+}
+
+.input-group-addon {
+      background-color: #333;
+      color: white;
+      font-weight: 300;
+}
+
+
+.input-group .form-control {
+   font-family: arial;
+   font-size: 15px;
+}
+
+.pay-button {
+   color: white;
+  background-color: black;
+  font-weight: 100;
+  /*letter-spacing: 1.3em;*/
+  /*font-weight: 900px;*/
+  margin-left: 200px;
+
+  /*&:hover { 
+    background-color: white;
+    border: 1px solid black; 
+    text-decoration: none;
+    color: black;}*/
+}
+
+.input-group {
+   margin-left: 100px;
+}

@@ -64,15 +64,13 @@ label {
 .btn-default {
   color: white;
   background-color: black;
-  /*border: 1px solid white;*/
   font-weight: 400;
   letter-spacing: 0.1em;
   &:hover {
     background-color: white;
     border: 1px solid black;
     text-decoration: none;
-    color: black;
-  }
+    color: black;}
 }
 
 
@@ -201,6 +199,7 @@ hr.page-divider:after {
 -------------------------------------------------- */
 textarea:focus,
 input[type="text"]:focus,
+input[type="label"]:focus,
 input[type="submit"]:focus,
 input[type="button"]:focus {
   border-color: #eee;
@@ -209,6 +208,7 @@ input[type="button"]:focus {
 }
 
 input[type="text"],
+input[type="label"],
 input[type="button"],
 input[type="submit"] {
   text-transform: uppercase;

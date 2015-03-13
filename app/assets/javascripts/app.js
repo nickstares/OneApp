@@ -24,6 +24,10 @@ $(".hover").on ('mouseenter',function(){
 
 
 
+
+
+
+
   var pageDivider = document.getElementsByClassName('.page-divider');
   pageDivider.setAttribute('text-insert', 'New content here!');
 });
