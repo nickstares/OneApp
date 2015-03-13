@@ -1,6 +1,7 @@
 
-<h3>Shopping Cart</h3><hr>
+<h2>Shopping Cart</h2><hr>
 <% @total = 0 %>
+
 
 <!-- DISPLAY ITEMS -->
 
@@ -25,35 +26,74 @@
 <hr>  
 <% end %>
 
-<!-- TOTAL SHOPPING CART-->
+<!-- PAYMENT PANEL -->
 
-<div class="row">
-<div class="col-lg-5 ">
-<% if @total > 0 %>
-    <div class="input-group col-lg-12">
-      <span class="input-group-addon"> Total: $</span>
-      <input type="text" class="form-control price-text" aria-label="Amount (to the nearest dollar)" placeholder= "<%= @total %>" id="exampleInputAmount" disabled>
-      <span class="input-group-addon">.00</span>
-    </div>
-</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">YOUR ORDER</h3>
+  </div>
+  <div class="panel-body">
+    <!-- TOTAL SHOPPING CART-->  
+    <div class="row">
+      <div class="col-lg-5 ">
+        <% if @total > 0 %>
+        <% @total_format = @total.to_s.reverse.gsub(/...(?=.)/,'\&,').reverse %>
+          <div class="input-group col-lg-12">
+            <span class="input-group-addon"> TOTAL $</span>
+            <input type="text" class="form-control price-text" aria-label="Amount (to the nearest dollar)" placeholder= "<%= @total_format %>" id="exampleInputAmount" >
+            <span class="input-group-addon">.00</span>
+          </div>
+      </div>
 
-<!-- STRIPE PAYMENT METHOD -->
 
-<div class="col-lg-5 ">
-  <%= form_tag payment_path(@user) do %>
-     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    <!-- STRIPE PAYMENT METHOD -->
+
+      <div class="col-lg-5 ">
+        <div id="Pay-Button">
+          <%= form_tag payment_path(@user) do %>
+           <!-- other button -->
+            <!-- <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript> -->
+            <input 
+              type="submit" 
+              value="Proceed to checkout"
               data-image="https://raw.githubusercontent.com/nstares0/OneApp/master/app/assets/images/one-logo-avatar-02.png"
               data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+              data-amount="<%= @total * 100 %>"
+              data-currency="cad"
               data-name="Buying From ONE"
               data-description=""
-              data-allow-remember-me
-              data-amount="<%= @total * 100 %>"
-              data-billingAddress="true"
-              data-shippingAddress="true"
-     ></script> 
-     <% end %>
-  <% end %>
-  </div>
-</div>
+              class="pay-button btn btn-default" 
+            />
+            <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+            <script src="https://raw.githubusercontent.com/nstares0/OneApp/master/app/assets/images/one-logo-avatar-02.png"></script>
+            <script>
+            $(document).ready(function() {
+                $('.pay-button').on('click', function(event) {
+                    event.preventDefault();
+
+                    var $button = $(this),
+                        $form = $button.parents('form');
+
+                    var opts = $.extend({}, $button.data(), {
+                        token: function(result) {
+                            $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+                        }
+                    });
+
+                    StripeCheckout.open(opts);
+                });
+            });
+            </script>
+          <% end %> <!-- Form -->
+        <% end %> <!-- If statement -->
+        </div> <!-- Pay button -->
+      </div> <!-- col-lg-5 -->
+    </div> <!-- Row -->
+  </div> <!-- Pannel Body -->
+</div> <!-- Pannel Pannel Deafult -->
+
+
+
+
 
 
