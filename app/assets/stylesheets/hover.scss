@@ -11,6 +11,19 @@
 
 }
 
+.color-overlay2{
+  display: block;
+  font-weight: normal;
+  color: rgba(255,255,255,0.9);
+  background-color: rgba(75, 75, 75, 0.6);
+  visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 178px;
+  bottom: 0;
+}
+
+
 .details-overlay{
   font-size: 20px;
   letter-spacing: 0.1em;

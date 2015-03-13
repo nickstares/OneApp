@@ -1,5 +1,26 @@
 <h1>Artists</h1>
 
+<!--
+
+@artists:
+{
+  "A" => [Artist, Artist, Artist],
+  "B" => [Artist, Artist, Artist],
+  "C" => [Artist, Artist, Artist],
+  ...
+}
+
+@artists.each_slice(3) do |artists_by_initial|
+  artists_by_initial:
+  [
+    ["A", [Artist, Artist, ... ]],
+    ["B", [Artist, Artist, ... ]],
+    ["C", [Artist, Artist, ... ]]
+  ]
+end
+
+-->
+
 <% @artists.each_slice(3) do |artists_by_initial| %>
   <div class="row">
     <% artists_by_initial.each do |artists|  %>

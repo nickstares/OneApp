@@ -24,7 +24,7 @@ a:hover{
   color: inherit;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   margin: 0 0 10px 0;
   padding: 0;
   text-transform: uppercase;
@@ -43,7 +43,9 @@ h2.subtext {
   font-weight: 500;
   font-size: 12px;
 }
-
+h4{
+  font-size: 16px;
+}
 .categories-link {
   text-transform: uppercase;
   font-size: 36px;
@@ -62,15 +64,13 @@ label {
 .btn-default {
   color: white;
   background-color: black;
-  /*border: 1px solid white;*/
   font-weight: 400;
   letter-spacing: 0.1em;
-  &:hover { 
+  &:hover {
     background-color: white;
-    border: 1px solid black; 
+    border: 1px solid black;
     text-decoration: none;
-    color: black;
-  }
+    color: black;}
 }
 
 
@@ -84,6 +84,8 @@ label {
   height: 50px;
   background-color: #333;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .container .text-muted {
@@ -184,6 +186,9 @@ hr.page-divider:after {
    margin-bottom:50px;
 }
 
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
 /* IMAGE THUMB HOVERS
 -------------------------------------------------- */
 .row-marg {
@@ -194,6 +199,7 @@ hr.page-divider:after {
 -------------------------------------------------- */
 textarea:focus,
 input[type="text"]:focus,
+input[type="label"]:focus,
 input[type="submit"]:focus,
 input[type="button"]:focus {
   border-color: #eee;
@@ -202,6 +208,7 @@ input[type="button"]:focus {
 }
 
 input[type="text"],
+input[type="label"],
 input[type="button"],
 input[type="submit"] {
   text-transform: uppercase;
@@ -212,7 +219,7 @@ input[type="submit"] {
 -------------------------------------------------- */
 .artist-az {
   font-weight: 900px;
-  font-size: 36px;  
+  font-size: 36px;
   margin-top: 15px;
 }
 
