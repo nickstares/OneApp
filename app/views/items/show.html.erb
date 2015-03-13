@@ -9,8 +9,8 @@
   </div>
 
   <div class="col-lg-4">
-    <p><strong>Description</strong></p>
-    <p><%= @item.dimensions %></p>
+    <p><strong>Medium</strong>: <%= @item.medium %></p>
+    <p><strong>Dimensions</strong>: <%= @item.dimensions %></p>
     <p><strong>$<%= @item.price %></strong></p>
   <% if user = current_deviseuser %>
     <p> <% if @item.reservation_time.nil? && @item.purchased_date.nil?%>
@@ -43,10 +43,10 @@
       <div class="img-thumb">
         <%= image_tag("#{i.url}")%>
       </div>
-      <% end %>
     <div class="color-overlay">
-    <div class = "details-overlay"><%= i.title %></div>
+      <div class = "details-overlay"><%= i.title %></div>
     </div>
+    <% end %>
     </div>
-<% end %>
+  <% end %>
 </div>

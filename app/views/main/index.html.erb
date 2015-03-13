@@ -4,18 +4,30 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag "carousel/1.jpg", style: "height: 400px" %>
+      <%= image_tag "carousel/1.jpg" %>
     </div>
     <div class="item">
-      <%= image_tag "carousel/2.jpg", style: "height: 400px" %>
+      <%= image_tag "carousel/2.jpg" %>
     </div>
     <div class="item">
-      <%= image_tag "carousel/3.jpg", style: "height: 400px" %>
+      <%= image_tag "carousel/3.jpg"%>
+    </div>
+      <div class="item">
+      <%= image_tag "carousel/4.jpg"%>
+    </div>
+      <div class="item">
+      <%= image_tag "carousel/5.jpg"%>
+    </div>
+    <div class="item">
+      <%= image_tag "carousel/6.jpg"%>
     </div>
   </div>
 
@@ -53,16 +65,9 @@
   <% end %>
 </div>
 
-
-  <hr>
-
-  <h1>One Application</h1>
-
-
-  <%= link_to "Log Out Using Devise", destroy_deviseuser_session_path, method: :delete %> <br>
-  <%= link_to "Log In Using Devise", new_deviseuser_session_path %> <br>
-  <%= link_to "sign up using devise", new_deviseuser_registration_path %> <br>
-  <%= link_to "invite someone", new_deviseuser_invitation_path %> <br>
+  <p></p>
+  <p><%= link_to "sign up using devise", new_deviseuser_registration_path %> <br>
+  <%= link_to "invite someone", new_deviseuser_invitation_path %> </p>
 
 
 
