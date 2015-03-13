@@ -39,14 +39,21 @@
 
   <% @exclusives.each do |i| %>
     <div class="col-lg-4 hover">
-      <%= link_to artist_item_path(@artist, i) do %>
+     <% artist_id = i.artist_id %>
+      <%= link_to artist_item_path(artist_id, i) do %>
       <div class="img-thumb">
         <%= image_tag("#{i.url}")%>
       </div>
-      <% end %>
     <div class="color-overlay">
     <div class = "details-overlay"><%= i.title %></div>
     </div>
+    <% end %>
     </div>
 <% end %>
 </div>
+
+
+
+
+
+
