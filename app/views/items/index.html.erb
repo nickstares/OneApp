@@ -20,7 +20,7 @@
 
 <div class="row">
   <% @items.each do |i| %>
-  <div class="col-lg-6">
+  <div class="col-lg-4">
     <%= link_to artist_item_path(@artist, i) do %>
       <div class="img-thumb">
         <%= image_tag("#{i.url}") %>
