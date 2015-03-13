@@ -12,7 +12,7 @@
     </div>
     <div class="col-lg-4 ">
       <!-- Expiration Time -->
-      <% time = Time.now + (60) %>
+      <% time = item.reservation_time + (60) - (7*60*60)%>
       <p><strong>Reserved until : <%= time.strftime('%a, %d %b %Y %H:%M:%S') %></strong></p>
       <!-- Description -->
       <p>Description</p>
