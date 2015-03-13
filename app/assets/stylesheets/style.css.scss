@@ -24,7 +24,7 @@ a:hover{
   color: inherit;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   margin: 0 0 10px 0;
   padding: 0;
   text-transform: uppercase;
@@ -43,7 +43,9 @@ h2.subtext {
   font-weight: 500;
   font-size: 12px;
 }
-
+h4{
+  font-size: 16px;
+}
 .categories-link {
   text-transform: uppercase;
   font-size: 36px;
@@ -184,6 +186,9 @@ hr.page-divider:after {
    margin-bottom:50px;
 }
 
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
 /* IMAGE THUMB HOVERS
 -------------------------------------------------- */
 .row-marg {
