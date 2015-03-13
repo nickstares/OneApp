@@ -6,7 +6,7 @@ class ReservationsController < ApplicationController
          @item.user_id = current_deviseuser[:id]
          @item.reservation_time = Time.now
          @item.save
-         ResetShoppingCartWorker.perform_in(40.minutes, @item.id)
+         # ResetShoppingCartWorker.perform_in(40.minutes, @item.id)
          index
          redirect_to :back
       else
