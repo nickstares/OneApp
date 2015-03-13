@@ -1,15 +1,36 @@
-
 <h1>Artists</h1>
 
-<div class="row">
-  <% @artists.each do |key,value|  %>
-    <div class="col-lg-4">
-       <h1 class="artist-az"><%= key %></h1>
-       <hr class="artist-letter">
-        <% value.each do |v|  %>
-          <p><%= link_to "#{v.fullname}", artist_items_path(v), class: "artist-name" %></p>
-        <% end %>
-    </div>
-  <% end %>
-</div>
+<!--
 
+@artists:
+{
+  "A" => [Artist, Artist, Artist],
+  "B" => [Artist, Artist, Artist],
+  "C" => [Artist, Artist, Artist],
+  ...
+}
+
+@artists.each_slice(3) do |artists_by_initial|
+  artists_by_initial:
+  [
+    ["A", [Artist, Artist, ... ]],
+    ["B", [Artist, Artist, ... ]],
+    ["C", [Artist, Artist, ... ]]
+  ]
+end
+
+-->
+
+<% @artists.each_slice(3) do |artists_by_initial| %>
+  <div class="row">
+    <% artists_by_initial.each do |artists|  %>
+      <div class="col-lg-4">
+         <h1 class="artist-az"><%= artists[0] %></h1>
+         <hr class="artist-letter">
+          <% artists[1].each do |v|  %>
+            <p><%= link_to "#{v.fullname}", artist_items_path(v), class: "artist-name" %></p>
+          <% end %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
