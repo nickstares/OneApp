@@ -22,13 +22,13 @@
       <!-- Totalize Items price -->
       <%   @total += item.price %>
       <% @user = item.user_id %>
-      <% @item = item %>  
+      <% @item = item %>
     </div>
-    <div class="col-lg-4 ">  
+    <div class="col-lg-4 ">
       <%= button_to(name = "Delete from Cart", reservation_delete_path(@item), method: :delete, class: "btn btn-default" ) %>
     </div>
   </div>
-<hr>  
+<hr>
 <% end %>
 
 <!-- PAYMENT PANEL -->
@@ -38,7 +38,7 @@
     <h3 class="panel-title">YOUR ORDER</h3>
   </div>
   <div class="panel-body">
-    <!-- TOTAL SHOPPING CART-->  
+    <!-- TOTAL SHOPPING CART-->
     <div class="row">
       <div class="col-lg-5 ">
         <% if @total > 0 %>
@@ -58,8 +58,8 @@
           <%= form_tag payment_path(@user) do %>
            <!-- other button -->
             <!-- <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript> -->
-            <input 
-              type="submit" 
+            <input
+              type="submit"
               value="Proceed to checkout"
               data-image="https://raw.githubusercontent.com/nstares0/OneApp/master/app/assets/images/one-logo-avatar-02.png"
               data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -67,7 +67,7 @@
               data-currency="cad"
               data-name="Buying From ONE"
               data-description=""
-              class="pay-button btn btn-default" 
+              class="pay-button btn btn-default"
             />
             <script src="https://checkout.stripe.com/v2/checkout.js"></script>
             <script src="https://raw.githubusercontent.com/nstares0/OneApp/master/app/assets/images/one-logo-avatar-02.png"></script>

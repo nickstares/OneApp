@@ -1,10 +1,10 @@
 class ResetShoppingCartWorker
    include Sidekiq::Worker
-   
-      
+
+
       def perform(item_id)
-         @item = Item.find(item_id)     
-         if @item.purchased_date.nil? 
+         @item = Item.find(item_id)
+         if @item.purchased_date.nil?
             @item.user_id = nil
             @item.reservation_time = nil
             @item.save
@@ -14,7 +14,7 @@ class ResetShoppingCartWorker
             puts "Item already purchased"
          end
       end
-   
+
 
 
 end
