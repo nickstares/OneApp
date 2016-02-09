@@ -1,22 +1,22 @@
 Rails.application.configure do
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.perform_deliveries = true
-# config.action_mailer.raise_delivery_errors = true
-config.action_mailer.default :charset => "utf-8"
+# config.action_mailer.delivery_method = :smtp
+# config.action_mailer.perform_deliveries = true
+# # config.action_mailer.raise_delivery_errors = true
+# config.action_mailer.default :charset => "utf-8"
 
-config.action_mailer.smtp_settings = {
+# config.action_mailer.smtp_settings = {
 
-    :address   => "smtp.mandrillapp.com",
-    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
-    :enable_starttls_auto => true, # detects and uses STARTTLS
-    :user_name => ENV['MANDRILL_USERNAME'],
-    :password  => ENV['MANDRILL_APIKEY'], # SMTP password is any valid API key
-    # :authentication => 'plain', # Mandrill supports 'plain' or 'login'
-    :domain => 'heroku.com', # your domain to identify your server when connecting
-  }
+#     :address   => "smtp.mandrillapp.com",
+#     :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+#     :enable_starttls_auto => true, # detects and uses STARTTLS
+#     :user_name => ENV['MANDRILL_USERNAME'],
+#     :password  => ENV['MANDRILL_APIKEY'], # SMTP password is any valid API key
+#     # :authentication => 'plain', # Mandrill supports 'plain' or 'login'
+#     :domain => 'heroku.com', # your domain to identify your server when connecting
+#   }
 
-  # Settings specified here will take precedence over those in config/application.rb.
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+#   # Settings specified here will take precedence over those in config/application.rb.
+#   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
