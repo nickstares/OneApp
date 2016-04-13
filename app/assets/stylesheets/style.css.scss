@@ -240,3 +240,19 @@ input[type="submit"] {
   background-image: none;
 }
 
+
+// FORM
+
+span.hint{
+  display: block;
+  font-size: 10px;
+  font-style:italic;
+}
+
+div.input {
+  margin-bottom: 10px;
+}
+
+div.form-actions {
+  margin-bottom: 10px;
+}
