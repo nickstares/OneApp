@@ -6,8 +6,8 @@ class ReservationsController < ApplicationController
          @item.user_id = current_deviseuser[:id]
          @item.reservation_time = Time.now
          @item.save
-         ResetShoppingCartWorker.perform_in(1.minutes, @item.id)
-         index
+        #  ResetShoppingCartWorker.perform_in(1.minutes, @item.id)
+        #  index
          redirect_to :back
       else
          flash[:notice] = "This Item is already reserved"
@@ -22,18 +22,18 @@ class ReservationsController < ApplicationController
       purchaseditems = user.items
       purchaseditems.each do |item|
          unless item.reservation_time.nil?
-             @ReservedItems << item       
+             @ReservedItems << item
          end
-      end 
-   end        
-      
-      
-   def delete 
+      end
+   end
+
+
+   def delete
       item = Item.find(params[:id])
       item.reservation_time = nil
       item.user_id = nil
       item.save
       redirect_to :back
-   end   
-   
+   end
+
 end
