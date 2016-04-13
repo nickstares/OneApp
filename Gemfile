@@ -37,6 +37,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use Puma as the app server
 gem 'puma'
+gem 'pry'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -57,4 +58,3 @@ group :development, :test do
   # turn off the asset request notifications in the logs
   gem 'quiet_assets'
 end
-
