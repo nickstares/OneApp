@@ -1,5 +1,5 @@
 class Artist < ActiveRecord::Base
-  has_many :items
+  has_many :items, dependent: :destroy
 
   def self.all_grouped_by_first_initial
     order(:first_name).reduce({}) do |hash, artist|

@@ -110,24 +110,3 @@
 # c5 = Category.create(category_name: "Installation")
 # c6 = Category.create(category_name: "Print")
 # c7 = Category.create(category_name: "Drawing")
-
-##Gabrielle Viertel
-Item.find(27).update_attributes(url: "http://weandthecolor.com/wp-content/uploads/2015/01/My-lost-Soul.jpg")
-Item.find(28).update_attributes(url: "http://weandthecolor.com/wp-content/uploads/2015/01/Work-from-the-Virgin-series.jpg")
-Item.create(title: "Red Furie", dimensions: "13 x 14", medium: "Photography", price: "1100", artist_id: 14, category_id: 4, url: "http://weandthecolor.com/wp-content/uploads/2015/01/RED-FURIE-Photo-by-Gabriele-Viertel-with-fashion-art-by-Agnes-van-Dijk.jpg")
-Item.create(title: "Artistic Underwater", dimensions: "13 x 14", medium: "Photography", price: "1100", artist_id: 14, category_id: 4, url: "http://weandthecolor.com/wp-content/uploads/2015/01/Artistic-underwater-photography-by-Gabrielle-Viertel.jpg")
-Item.create(title: "Art of Allure", dimensions: "13 x 14", medium: "Photography", price: "1100", artist_id: 14, category_id: 4, url: "http://weandthecolor.com/wp-content/uploads/2015/01/Art-of-Allure-Underwater-photography-by-Gabriele-Viertel-with-Mira-Paz.jpg")
-
-##Leslie Ann O'Dell
-Artist.find(17).update_attributes(url: "http://static1.squarespace.com/static/53aa2813e4b06fbb6ce3cd0f/t/56fc8423859fd08c7e558b32/1459389486391/?format=2500w")
-Item.find(37).update_attributes(url: "http://411posters.com/wp-content/uploads/2014/07/odell-Dysphoria.jpg")
-Item.create(title: "Mania", dimensions: "20 X 24", medium: "Manipulated photography illustration", price: "1100", artist_id: 17, category_id: 3, url: "http://411posters.com/wp-content/uploads/2015/09/mania_leslieannodell.jpg")
-Item.create(title: "Pollen", dimensions: "16 X 24", medium: "Manipulated photography illustration", price: "1100", artist_id: 17, category_id: 3, url: "http://411posters.com/wp-content/uploads/2013/12/odell-pollen.jpg")
-Item.create(title: "Stray", dimensions: "16 X 24", medium: "Manipulated photography illustration", price: "1100", artist_id: 17, category_id: 3, url: "http://411posters.com/wp-content/uploads/2013/10/odell-stray.jpg")
-
-##Martin Kimbell
-Artist.find(12).update_attributes(url: "http://i0.wp.com/media.boingboing.net/wp-content/uploads/2014/08/Umber_EP_MF_by_Kimbell.jpg?w=608")
-Item.find(22).update_attributes(url:"http://i2.wp.com/media.boingboing.net/wp-content/uploads/2014/08/light_art_20_by_kimbell-d2ojjmd.jpg?w=900")
-
-#Victor Castillo
-Artist.find(9).update_attributes(url: "http://blog.1xrun.com/wp-content/uploads/2012/09/Victor-castillo-Levine-AM-02-1024x768.jpg")
