@@ -112,78 +112,109 @@
 # c7 = Category.create(category_name: "Drawing")
 #####
 
-#seeding artists
-##LAST ARTIST : 21
-#i6 = Item.create(title: "", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 22, category_id: 1, url: "")
-#a2 = Artist.create(url: "", first_name: "", last_name: "", artist_description: "")
+
+##R
+
+# ##REBECCA WARD
+# a1 = Artist.create(url: "http://fadmagazine.com/wp-content/uploads/20130326-161534.jpg", first_name: "Rebecca", last_name: "Ward", artist_description: "Rebecca Ward was born in 1984 in Waco, a city which is the county seat of McLennan County, Texas, United States. Today she lives and works in Brooklyn, New York. After a BA in Fine Arts and Studio Art at University of Texas in Austin, Rebecca Ward studied Fine Arts at School of Visual Arts, New York, where she graduated with a MFA in 2012. Since that time, her work has been shown in numerous group and solo exhibitions nationally and abroad. Rebecca Ward is not just a painter in a classical sense. She loves to experiment with new techniques and materials. Her body of work comprises installations and abstract paintings of diverse geometric shapes. She skillfully plays with different materials, forms, textures, colors or even transparencies. Whether painting, installation or something between, her work shows a great sense of how to mix different forms, colors, and materials.")
+# i1 = Item.create(title: "Foreshadowing", dimensions: "24 x 18in", medium: "Painting with acrylic on stitched canvas", price: "4000", artist_id: 21, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/04/Foreshadowing-painting-with-acrylic-on-stitched-canvas-by-American-artist-Rebecca-Ward-24-x-18in-2015.jpg")
+# i2 = Item.create(title: "A (goading)", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 21, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/04/A-goading-artwork-created-by-Rebecca-Ward-with-oil-on-stitched-cotton-batting-48-x-36in-2015.jpg")
+# i3 = Item.create(title: "Eclipse", dimensions: "60 x 60in", medium: "Eclipse, acrylic on stitched canvas", price: "4000", artist_id: 21, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/04/Eclipse-acrylic-on-stitched-canvas-work-in-the-size-of-60-x-60in-created-in-2015-by-Rebecca-Ward.jpg")
 
 
-##A
-a3 = Artist.create(url: "https://newamericanpaintings.com/media/styles/bio_cover_img/public/annaconwayportrait.jpg?itok=qo0_KPa4", first_name: "Anna", last_name: "Conway", artist_description: "The New York City based artist is known for her equally precise and methodical style. Her work represents different scenes, which combine detailed observations and imagination.")
-i7 = Item.create(title: "Potential", dimensions: "132,8 x 203,2 cm", medium: "Oil on linen", price: "4000", artist_id: 23, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/02/01-Potential-%E2%80%93-Painting-by-Anna-Conway-from-2015-with-oil-on-linen-in-a-size-of-1328-x-2032-cm.jpg")
-i8 = Item.create(title: "Perseverance", dimensions: "76.2 x 121.9 cm", medium: "Oil painting", price: "4000", artist_id: 23, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/02/03-Perseverance-%E2%80%93-Oil-painting-by-Anna-Conway-on-linen-from-2015-in-a-dimension-of-762-x-1219-cm.jpg")
-i9 = Item.create(title: "Devotion", dimensions: "48 x 36in", medium: "Oil on linen", price: "4000", artist_id: 23, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/02/04-Devotion-%E2%80%93-Work-with-oil-on-linen-by-Anna-Conway-from-2015-in-the-size-of-1118-x-1829-cm.jpg")
+
+# ##S STEVE KIM
+#
+# a6 = Artist.create(url: "http://38.media.tumblr.com/tumblr_ldqle4RRmT1qz9p2o.png", first_name: "Steve", last_name: "Kim", artist_description: "Steve Kim was born in Seoul, Korea. At the age of two, he immigrated with his family to the United States. Today he lives and works in Oxford, Mississippi. Steve Kim received his undergraduate degree from Art Center College of Design in 2006 and his masters from Claremont Graduate University in 2010. His creative work has been shown in several group and solo exhibitions in Los Angeles, San Francisco, Portland, Korea, Italy, UK, Netherlands, and Poland. Besides his artistic work, Steve Kim works as freelance illustrator for big brands such as Adobe, Frame, Matter/Medium, Hohe Luft, The New Republic, Arc/New Scientist, and The Verge. His work has been featured in countless publications ranging from print media to web.")
+# i16 = Item.create(title: "Support", dimensions: "48 x 36in", medium: "Oil on canvas", price: "5000", artist_id: 26, category_id: 3, url: "http://weandthecolor.com/wp-content/uploads/2016/01/3-Support-oil-painting-by-Korean-artist-and-illustrator-Steve-Kim.jpg")
+# i17 = Item.create(title: "Happy", dimensions: "48 x 36in", medium: "Oil on canvas", price: "6000", artist_id: 26, category_id: 3, url: "http://weandthecolor.com/wp-content/uploads/2016/01/2-Happy-another-oil-painting-by-Steve-Kim-from-2011.jpg")
+# i18 = Item.create(title: "Wait", dimensions: "30 × 40in", medium: "Oil on canvas", price: "2000", artist_id: 26, category_id: 3, url: "http://weandthecolor.com/wp-content/uploads/2016/01/5-Wait-an-oil-painting-in-the-size-of-30x40-from-2010.jpg")
+#
+
+
+# ##T
+# ##THOMAS Amerlynck
+# a4 = Artist.create(url: "http://www.pisorno.it/wp-content/uploads/2015/10/Thomas-Amerlynck.jpg", first_name: "Thomas", last_name: "Amerlynck", artist_description: "Thomas Amerlynck was born in Anderlecht in June 29, 1981. Today he lives in Brussels, where he pursues his work. Before he started his career as a professional artist, Thomas Amerlynck studied at various universities including ENSAV La Cambre, Brussels, Belgium with a Master in Printmaking, International School for Graphic Arts in Florence, Italy where he acquired his professional qualification as an engraver and printmaker, G4 with the Master of art at Giuseppe Di Giangirolamo, Barga, Italy plus silkscreen qualification, and the Institut Saint-Luc, Brussels, Belgium with a graduation from the Illustration Department.")
+# i10 = Item.create(title: "Portrait Des Héritiers", dimensions: "48 x 36in", medium: "Ink on Paper", price: "4000", artist_id: 24, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/02/5-Portrait-Des-He%CC%81ritiers-%E2%80%93-artwors-of-muddled-lines-with-figurative-elements.jpg")
+# i11 = Item.create(title: "A Dada", dimensions: "48 x 36in", medium: "Ink on Paper", price: "4000", artist_id: 24, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/02/1-A-Dada-an-etching-from-2010-by-Belgian-artist-Thomas-Amerlynck.jpg")
+# i12 = Item.create(title: "A La Chasse", dimensions: "48 x 36in", medium: "Ink on Paper", price: "4000", artist_id: 24, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/02/2-A-La-Chasse-this-artwork-has-been-created-in-a-paper-size-of-100x70cm.jpg")
+
+
+# ##A
+# a3 = Artist.create(url: "https://newamericanpaintings.com/media/styles/bio_cover_img/public/annaconwayportrait.jpg?itok=qo0_KPa4", first_name: "Anna", last_name: "Conway", artist_description: "The New York City based artist is known for her equally precise and methodical style. Her work represents different scenes, which combine detailed observations and imagination.")
+# i7 = Item.create(title: "Potential", dimensions: "132,8 x 203,2 cm", medium: "Oil on linen", price: "4000", artist_id: 23, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/02/01-Potential-%E2%80%93-Painting-by-Anna-Conway-from-2015-with-oil-on-linen-in-a-size-of-1328-x-2032-cm.jpg")
+# i8 = Item.create(title: "Perseverance", dimensions: "76.2 x 121.9 cm", medium: "Oil painting", price: "4000", artist_id: 23, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/02/03-Perseverance-%E2%80%93-Oil-painting-by-Anna-Conway-on-linen-from-2015-in-a-dimension-of-762-x-1219-cm.jpg")
+# i9 = Item.create(title: "Devotion", dimensions: "48 x 36in", medium: "Oil on linen", price: "4000", artist_id: 23, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/02/04-Devotion-%E2%80%93-Work-with-oil-on-linen-by-Anna-Conway-from-2015-in-the-size-of-1118-x-1829-cm.jpg")
 
 
 ##C
 
-##CLARE ROJAS
-a2 = Artist.create(url: "https://i.ytimg.com/vi/vMIypdcEQvs/maxresdefault.jpg", first_name: "Clare", last_name: "Rojas", artist_description: "Clare Rojas was born in 1976 in Columbus, Ohio. She currently lives and works as an internationally renowned artist in San Francisco, California. Clare Rojas studied at the Rhode Island School of Design and the Art Institute of Chicago, where she received her MFA. As a multidisciplinary artist, she expresses herself through painting, installations, and video productions. You can find more information below the first image.")
-i4 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Paint on canvas", price: "4040", artist_id: 22, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/03/1-Clare-Rojass-recent-paintings-are-based-on-pure-geometric-abstraction.jpg")
-i5 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Paint on canvas", price: "4500", artist_id: 22, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/03/2-A-minimalist-artwork-of-abstract-compositions-using-simple-graphic-shapes.jpg")
-i6 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Paint on canvas", price: "4050", artist_id: 22, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/03/3-American-artist-Clare-Rojas-produces-colorful-abstract-compositions-on-stretched-linen.jpg")
-
-
-##H
-
-
-##I
-
-
-##K
-
-
-##O
-
-
-##Q
-
-
-##R
-##REBECCA WARD
-a1 = Artist.create(url: "http://fadmagazine.com/wp-content/uploads/20130326-161534.jpg", first_name: "Rebecca", last_name: "Ward", artist_description: "Rebecca Ward was born in 1984 in Waco, a city which is the county seat of McLennan County, Texas, United States. Today she lives and works in Brooklyn, New York. After a BA in Fine Arts and Studio Art at University of Texas in Austin, Rebecca Ward studied Fine Arts at School of Visual Arts, New York, where she graduated with a MFA in 2012. Since that time, her work has been shown in numerous group and solo exhibitions nationally and abroad. Rebecca Ward is not just a painter in a classical sense. She loves to experiment with new techniques and materials. Her body of work comprises installations and abstract paintings of diverse geometric shapes. She skillfully plays with different materials, forms, textures, colors or even transparencies. Whether painting, installation or something between, her work shows a great sense of how to mix different forms, colors, and materials.")
-i1 = Item.create(title: "Foreshadowing", dimensions: "24 x 18in", medium: "Painting with acrylic on stitched canvas", price: "4000", artist_id: 21, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/04/Foreshadowing-painting-with-acrylic-on-stitched-canvas-by-American-artist-Rebecca-Ward-24-x-18in-2015.jpg")
-i2 = Item.create(title: "A (goading)", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 21, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/04/A-goading-artwork-created-by-Rebecca-Ward-with-oil-on-stitched-cotton-batting-48-x-36in-2015.jpg")
-i3 = Item.create(title: "Eclipse", dimensions: "60 x 60in", medium: "Eclipse, acrylic on stitched canvas", price: "4000", artist_id: 21, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/04/Eclipse-acrylic-on-stitched-canvas-work-in-the-size-of-60-x-60in-created-in-2015-by-Rebecca-Ward.jpg")
+# ##CLARE ROJAS
+# a2 = Artist.create(url: "https://i.ytimg.com/vi/vMIypdcEQvs/maxresdefault.jpg", first_name: "Clare", last_name: "Rojas", artist_description: "Clare Rojas was born in 1976 in Columbus, Ohio. She currently lives and works as an internationally renowned artist in San Francisco, California. Clare Rojas studied at the Rhode Island School of Design and the Art Institute of Chicago, where she received her MFA. As a multidisciplinary artist, she expresses herself through painting, installations, and video productions. You can find more information below the first image.")
+# i4 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Paint on canvas", price: "4040", artist_id: 22, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/03/1-Clare-Rojass-recent-paintings-are-based-on-pure-geometric-abstraction.jpg")
+# i5 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Paint on canvas", price: "4500", artist_id: 22, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/03/2-A-minimalist-artwork-of-abstract-compositions-using-simple-graphic-shapes.jpg")
+# i6 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Paint on canvas", price: "4050", artist_id: 22, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/03/3-American-artist-Clare-Rojas-produces-colorful-abstract-compositions-on-stretched-linen.jpg")
 
 
 
-##S STEVE KIM
-
-a6 = Artist.create(url: "http://38.media.tumblr.com/tumblr_ldqle4RRmT1qz9p2o.png", first_name: "Steve", last_name: "Kim", artist_description: "Steve Kim was born in Seoul, Korea. At the age of two, he immigrated with his family to the United States. Today he lives and works in Oxford, Mississippi. Steve Kim received his undergraduate degree from Art Center College of Design in 2006 and his masters from Claremont Graduate University in 2010. His creative work has been shown in several group and solo exhibitions in Los Angeles, San Francisco, Portland, Korea, Italy, UK, Netherlands, and Poland. Besides his artistic work, Steve Kim works as freelance illustrator for big brands such as Adobe, Frame, Matter/Medium, Hohe Luft, The New Republic, Arc/New Scientist, and The Verge. His work has been featured in countless publications ranging from print media to web.")
-i16 = Item.create(title: "Support", dimensions: "48 x 36in", medium: "Oil on canvas", price: "5000", artist_id: 26, category_id: 3, url: "http://weandthecolor.com/wp-content/uploads/2016/01/3-Support-oil-painting-by-Korean-artist-and-illustrator-Steve-Kim.jpg")
-i17 = Item.create(title: "Happy", dimensions: "48 x 36in", medium: "Oil on canvas", price: "6000", artist_id: 26, category_id: 3, url: "http://weandthecolor.com/wp-content/uploads/2016/01/2-Happy-another-oil-painting-by-Steve-Kim-from-2011.jpg")
-i18 = Item.create(title: "Wait", dimensions: "30 × 40in", medium: "Oil on canvas", price: "2000", artist_id: 26, category_id: 3, url: "http://weandthecolor.com/wp-content/uploads/2016/01/5-Wait-an-oil-painting-in-the-size-of-30x40-from-2010.jpg")
-
-
-
-##T
-##THOMAS Amerlynck
-a4 = Artist.create(url: "http://www.pisorno.it/wp-content/uploads/2015/10/Thomas-Amerlynck.jpg", first_name: "Thomas", last_name: "Amerlynck", artist_description: "Thomas Amerlynck was born in Anderlecht in June 29, 1981. Today he lives in Brussels, where he pursues his work. Before he started his career as a professional artist, Thomas Amerlynck studied at various universities including ENSAV La Cambre, Brussels, Belgium with a Master in Printmaking, International School for Graphic Arts in Florence, Italy where he acquired his professional qualification as an engraver and printmaker, G4 with the Master of art at Giuseppe Di Giangirolamo, Barga, Italy plus silkscreen qualification, and the Institut Saint-Luc, Brussels, Belgium with a graduation from the Illustration Department.")
-i10 = Item.create(title: "Portrait Des Héritiers", dimensions: "48 x 36in", medium: "Ink on Paper", price: "4000", artist_id: 24, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/02/5-Portrait-Des-He%CC%81ritiers-%E2%80%93-artwors-of-muddled-lines-with-figurative-elements.jpg")
-i11 = Item.create(title: "A Dada", dimensions: "48 x 36in", medium: "Ink on Paper", price: "4000", artist_id: 24, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/02/1-A-Dada-an-etching-from-2010-by-Belgian-artist-Thomas-Amerlynck.jpg")
-i12 = Item.create(title: "A La Chasse", dimensions: "48 x 36in", medium: "Ink on Paper", price: "4000", artist_id: 24, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/02/2-A-La-Chasse-this-artwork-has-been-created-in-a-paper-size-of-100x70cm.jpg")
+# ##Z
+# a5 = Artist.create(url: "http://s1.r29static.com/bin/entry/175/x,80/1225033/bn-feature1-horizontal-zaria.jpg", first_name: "Zaria", last_name: "Foreman", artist_description: "Brooklyn based artist Zaria Forman is fascinated by remote places and the forces of nature. She studied at the Student Art Centers International in Florence, Italy and received a BS in Studio Arts at Skidmore College in New York.  Zaria Forman has a particular fondness for the landscapes of the polar regions, oceans and icebergs. On expeditions like a trip to Greenland in August 2012 or her current expedition to Antarctica, she gathers material and inspiration for her drawings. Aboard the National Geographic Explorer, Zaria Forman is currently exploring South Georgia, the Falkland Islands, and the Antarctic Peninsula.")
+#
+# i13 = Item.create(title: "Deception Island", dimensions: "72in x 128in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 25, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/01/1-Deception-Island-Antarctica-%E2%80%93-drawing-by-Zaria-Forman-from-2015-in-the-size-of-72x128.jpg")
+# i14 = Item.create(title: "Lemarie Channel", dimensions: "44in x 60in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 25, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/01/2-Lemarie-Channel-Antarctica-%E2%80%93-work-from-2015-with-soft-pastel-on-paper-in-the-size-of-44x60.jpg")
+# i15 = Item.create(title: "Greenland", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 25, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/01/3-Greenland-no.-50-%E2%80%93-this-drawing-is-part-of-series-of-artworks-from-2012.jpg")
 
 
-##U
+a1 = Artist.create(url: "https://image.jimcdn.com/app/cms/image/transf/dimension=667x10000:format=jpg/path/sf8c4de2fe243c38e/image/i300b24c7883d034c/version/1371139593/h-g-griese.jpg", first_name: "H. G.", last_name: "Griese"", artist_description: "The German artist saw the light of day back in 1964 in Dresden, Germany where he still lives. After studying at the Hochschule für Bildende Künste Dresden (HfbK) from 1987 – 1995, he started to work as a painter and graphic artist. His artistic style is strongly influenced by classic paintings, comics, and his passion for clear architectural and graphic shapes. The German artist skilfully combines figurative representations with graphic elements. Determining lines and geometric shapes with a formal objectivity go along with ironic as well as exhilarating or sometimes almost cynical motives.")
+a2 = Artist.create(url: "http://www.valcomnews.com/wp-content/uploads/2013/05/Harvey%E2%80%93Koo.JPG", first_name: "Ian", last_name: "Harvey", artist_description: "Ian Harvey was born and raised in Boston. He currently lives and works in Sacramento, California where he is a Professor of Art at California State University.")
+a3 = Artist.create(url: "http://www.thepalettepages.com/wp-content/uploads/2014/05/palette.jpg", first_name: "Koen", last_name: "Lybaert", artist_description: "Koen Lybaert was born in 1965 in Wilrijk, Belgium. He is a contemporary artist who creates abstract paintings mainly with oil or watercolor on paper or canvas. His technique consists of careful layering that creates a subtle mixture of overlapping colors and shapes. The paintings show an abstract view of the natural landscapes around him. Koen Lybaert is mostly inspired by forests, lakes, mountains, the sea, and desolate landscapes. The contemporary paintings are based on his own photographs.")
+a4 = Artist.create(url: "http://images.vogue.it/Storage/Assets/Crops/21576/10/20919/Oscar-Tuazon_784x0.jpg", first_name: "Oscar", last_name: "Tuazon", artist_description: "In speaking about his architectonic sculptures and installations, Oscar Tuazon says, “I hope that the effect of my work is mostly physical. That’s what I like—walking through something, having an experience of the weight of things, or an experience of balance.” Tuazon, who studied architecture and urban studies and has assisted Vito Acconci in his architectural endeavors, is inspired by what he calls “outlaw architecture” and the way in which inhabitation redefines the form of an environment. His works are pared-down structures made from natural and industrial materials; this frequently includes wood, concrete, metals, and light fixtures, configured in such a way that works both with and against their entropic qualities.")
+a5 = Artist.create(url: "http://www.portavoz.tv/wp-content/uploads/2011/10/poster-Q-O.jpg", first_name: "Quirarte y", last_name: "Ornelas", artist_description: "")
+a6 = Artist.create(url: "http://static.boredpanda.com/blog/wp-content/uploads/2015/01/russian-fairy-tales-surreal-photograpjhy-uldus-bakhtiozina-2.jpg", first_name: "uldus", last_name: "", artist_description: "Russian-based photographer and artist")
+a7 = Artist.create(url: "http://www.artoronto.ca/wp-content/uploads/2015/08/rsz_image_9.jpg", first_name: "Yang", last_name: "Cao", artist_description: "His work is undoubtedly characterized by a figurative painting style with a vivid approach. The masterfully painted clouds look fluffy and three-dimensional. The expressions can vary from darkness and hopelessness to absolute joy. Especially the clouds are responsible for the different moods of the paintins. Some were painted very softly with very bright colors. They seem to dissolve while others appear to be very tight and some are small thunderstorms painted with a dark color and a flash. Also the background color as well as the body language of each character has a strong influence on the mood of each image.")
 
 
-##Y
+
+#seeding artists
+##LAST ARTIST : 26
+#i6 = Item.create(title: "", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 22, category_id: 1, url: "")
+#a2 = Artist.create(url: "", first_name: "", last_name: "", artist_description: "")
 
 
-##Z
-a5 = Artist.create(url: "http://s1.r29static.com/bin/entry/175/x,80/1225033/bn-feature1-horizontal-zaria.jpg", first_name: "Zaria", last_name: "Foreman", artist_description: "Brooklyn based artist Zaria Forman is fascinated by remote places and the forces of nature. She studied at the Student Art Centers International in Florence, Italy and received a BS in Studio Arts at Skidmore College in New York.  Zaria Forman has a particular fondness for the landscapes of the polar regions, oceans and icebergs. On expeditions like a trip to Greenland in August 2012 or her current expedition to Antarctica, she gathers material and inspiration for her drawings. Aboard the National Geographic Explorer, Zaria Forman is currently exploring South Georgia, the Falkland Islands, and the Antarctic Peninsula.")
+##H27
+i1 = Item.create(title: "Painting by Dresden", dimensions: "90 x 170 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Painting-by-Dresden-Germany-based-artist-HG-Griese.jpg")
+i2 = Item.create(title: "Graphic of Dresden", dimensions: "90 x 170 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Graphic-inspired-painting-with-oil-on-canvas-by-Dresden-Germany-based-artist-HG-Griese-90-x-170-cm-created-in-2012.jpg")
+i3 = Item.create(title: "Auslöser", dimensions: "1/3 – 80 x 60 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Ausl%C3%B6ser-1-3-80-x-60-cm-oil-on-canvas-created-in-2011.jpg")
 
-i13 = Item.create(title: "Deception Island", dimensions: "72in x 128in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 25, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/01/1-Deception-Island-Antarctica-%E2%80%93-drawing-by-Zaria-Forman-from-2015-in-the-size-of-72x128.jpg")
-i14 = Item.create(title: "Lemarie Channel", dimensions: "44in x 60in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 25, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/01/2-Lemarie-Channel-Antarctica-%E2%80%93-work-from-2015-with-soft-pastel-on-paper-in-the-size-of-44x60.jpg")
-i15 = Item.create(title: "Greenland", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 25, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/01/3-Greenland-no.-50-%E2%80%93-this-drawing-is-part-of-series-of-artworks-from-2012.jpg")
+
+#I28
+i4 = Item.create(title: "JAYJAY", dimensions: "48 x 36in", medium: "Oil Painting", price: "4000", artist_id: 28, category_id: 1, url: "http://www.valcomnews.com/wp-content/uploads/2013/05/Harvey_No_142-300x300.jpg")
+
+#K29
+i7 = Item.create(title: "Nanumaga", dimensions: "48 x 36in", medium: "Watercolor and gouache on paper", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/Nanumaga-Artwork-created-with-watercolor-and-gouache-on-paper.jpg")
+i8 = Item.create(title: "Qeqertarsuaq", dimensions: "48 x 36in", medium: "Work with watercolor and ink on paper", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/Qeqertarsuaq-Work-with-watercolor-and-ink-on-paper.jpg")
+i9 = Item.create(title: "Abstract N°", dimensions: "48 x 36in", medium: "Oil Paint", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/abstract-N%C2%B0-1067-Minimalist-artwork-with-oil-on-paper.jpg")
+
+
+#O30
+i10 = Item.create(title: "California King", dimensions: "97 3/5 × 79 9/10 × 136 3/5 in", medium: "Wood, Steel, Mattress", price: "400000", artist_id: 30, category_id: 2, url: "https://s-media-cache-ak0.pinimg.com/736x/b6/9e/69/b69e69821ae492a38b060709188385f8.jpg")
+i11 = Item.create(title: "A Hinge", dimensions: "98 2/5 × 236 1/5 × 77 1/5 in", medium: "Pine and Steel", price: "400000", artist_id: 30, category_id: 2, url: "http://www.museum-ludwig.de/typo3temp/_processed_/csm_OscarTuazon_MuseumLudwig__15__01_2a2791f110.jpg")
+i12 = Item.create(title: "Door/Table", dimensions: "83 1/10 × 6 4/5 × 32 1/10 in", medium: "Found door, concrete, steel", price: "400000", artist_id: 30, category_id: 2, url: "https://d32dm0rphc51dk.cloudfront.net/Z11hvijoG2qskhbN9MUw3A/large.jpg")
+
+
+#Q31
+i13 = Item.create(title: "Estructura 30", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "3400", artist_id: 31, category_id: 7, url: "http://galeriaenriqueguerrero.com/wp-content/uploads/2012/07/QO-7633-Estructura-24.jpg")
+i14 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "4040", artist_id: 31, category_id: 7, url: "http://api.ning.com/files/xUC*FNH859ExuYMGnkSApALPW6LrL857knfaDLBtm17dzJKknjG26n5cXRe0ytae2lc3ORBXIBbulW4FsQik7OYRbnBfZ1cSV45f3Vt03lk_/Quirarte_Ornelas_Ac_32.jpg")
+i15 = Item.create(title: "Structure - Wall", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "4200", artist_id: 31, category_id: 7, url: "http://api.ning.com/files/qNVxUAwLELbxgUCfm-Jk*G0JFqf35mLBYxH7EQcUqkYI3aRqCGUqLh1rq1wEkkLS4qUS5Z4RMqRvjvtkB3I9kEXdbnOOVOTlNwnCChbLBKE_/Quirarte_Ornelas_i_c_11.jpg")
+
+
+#U32
+i16 = Item.create(title: "Desperate romantics", dimensions: "39 2/5 × 47 1/5 in", medium: "Photography", price: "1000", artist_id: 32, category_id: 4, url: "https://s-media-cache-ak0.pinimg.com/736x/f5/e5/a0/f5e5a0972849f5c6c3f311eb30fd0216.jpg")
+i17 = Item.create(title: "The Awakening", dimensions: "39 2/5 × 47 1/5 in", medium: "Staged Photo", price: "1000", artist_id: 32, category_id: 4, url: "https://maverickcult.files.wordpress.com/2015/01/russian-fairy-tales-surreal-photograpjhy-uldus-bakhtiozina-16.jpg")
+i18 = Item.create(title: "Desperate romantics 2", dimensions: "39 2/5 × 47 1/5 in", medium: "Staged Photo", price: "1000", artist_id: 32, category_id: 4, url: "https://tedconfblog.files.wordpress.com/2014/04/5.jpg?w=900&h=701")
+
+
+#Y33
+i19 = Item.create(title: "Liminal IV", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Yang-Cao-Art-%E2%80%93-Liminal-IV-%E2%80%93-another-painting-of-the-series.jpg")
+i20 = Item.create(title: "Liminal XV", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Liminal-XV-%E2%80%93-painting-by-Toronto-based-artist-Yang-Cao.jpg")
+i21 = Item.create(title: "Liminal XVI", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Liminal-XVI-%E2%80%93-heads-in-the-clouds.jpg")
