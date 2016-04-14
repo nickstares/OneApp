@@ -164,57 +164,57 @@
 # i14 = Item.create(title: "Lemarie Channel", dimensions: "44in x 60in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 25, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/01/2-Lemarie-Channel-Antarctica-%E2%80%93-work-from-2015-with-soft-pastel-on-paper-in-the-size-of-44x60.jpg")
 # i15 = Item.create(title: "Greenland", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 25, category_id: 7, url: "http://weandthecolor.com/wp-content/uploads/2016/01/3-Greenland-no.-50-%E2%80%93-this-drawing-is-part-of-series-of-artworks-from-2012.jpg")
 
-
-a1 = Artist.create(url: "https://image.jimcdn.com/app/cms/image/transf/dimension=667x10000:format=jpg/path/sf8c4de2fe243c38e/image/i300b24c7883d034c/version/1371139593/h-g-griese.jpg", first_name: "H. G.", last_name: "Griese", artist_description: "The German artist saw the light of day back in 1964 in Dresden, Germany where he still lives. After studying at the Hochschule für Bildende Künste Dresden (HfbK) from 1987 – 1995, he started to work as a painter and graphic artist. His artistic style is strongly influenced by classic paintings, comics, and his passion for clear architectural and graphic shapes. The German artist skilfully combines figurative representations with graphic elements. Determining lines and geometric shapes with a formal objectivity go along with ironic as well as exhilarating or sometimes almost cynical motives.")
-a2 = Artist.create(url: "http://www.valcomnews.com/wp-content/uploads/2013/05/Harvey%E2%80%93Koo.JPG", first_name: "Ian", last_name: "Harvey", artist_description: "Ian Harvey was born and raised in Boston. He currently lives and works in Sacramento, California where he is a Professor of Art at California State University.")
-a3 = Artist.create(url: "http://www.thepalettepages.com/wp-content/uploads/2014/05/palette.jpg", first_name: "Koen", last_name: "Lybaert", artist_description: "Koen Lybaert was born in 1965 in Wilrijk, Belgium. He is a contemporary artist who creates abstract paintings mainly with oil or watercolor on paper or canvas. His technique consists of careful layering that creates a subtle mixture of overlapping colors and shapes. The paintings show an abstract view of the natural landscapes around him. Koen Lybaert is mostly inspired by forests, lakes, mountains, the sea, and desolate landscapes. The contemporary paintings are based on his own photographs.")
-a4 = Artist.create(url: "http://images.vogue.it/Storage/Assets/Crops/21576/10/20919/Oscar-Tuazon_784x0.jpg", first_name: "Oscar", last_name: "Tuazon", artist_description: "In speaking about his architectonic sculptures and installations, Oscar Tuazon says, “I hope that the effect of my work is mostly physical. That’s what I like—walking through something, having an experience of the weight of things, or an experience of balance.” Tuazon, who studied architecture and urban studies and has assisted Vito Acconci in his architectural endeavors, is inspired by what he calls “outlaw architecture” and the way in which inhabitation redefines the form of an environment. His works are pared-down structures made from natural and industrial materials; this frequently includes wood, concrete, metals, and light fixtures, configured in such a way that works both with and against their entropic qualities.")
-a5 = Artist.create(url: "http://www.portavoz.tv/wp-content/uploads/2011/10/poster-Q-O.jpg", first_name: "Quirarte y", last_name: "Ornelas", artist_description: "")
-a6 = Artist.create(url: "http://static.boredpanda.com/blog/wp-content/uploads/2015/01/russian-fairy-tales-surreal-photograpjhy-uldus-bakhtiozina-2.jpg", first_name: "uldus", last_name: "", artist_description: "Russian-based photographer and artist")
-a7 = Artist.create(url: "http://www.artoronto.ca/wp-content/uploads/2015/08/rsz_image_9.jpg", first_name: "Yang", last_name: "Cao", artist_description: "His work is undoubtedly characterized by a figurative painting style with a vivid approach. The masterfully painted clouds look fluffy and three-dimensional. The expressions can vary from darkness and hopelessness to absolute joy. Especially the clouds are responsible for the different moods of the paintins. Some were painted very softly with very bright colors. They seem to dissolve while others appear to be very tight and some are small thunderstorms painted with a dark color and a flash. Also the background color as well as the body language of each character has a strong influence on the mood of each image.")
-
-
-
-#seeding artists
-##LAST ARTIST : 26
-#i6 = Item.create(title: "", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 22, category_id: 1, url: "")
-#a2 = Artist.create(url: "", first_name: "", last_name: "", artist_description: "")
-
-
-##H27
-i1 = Item.create(title: "Painting by Dresden", dimensions: "90 x 170 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Painting-by-Dresden-Germany-based-artist-HG-Griese.jpg")
-i2 = Item.create(title: "Graphic of Dresden", dimensions: "90 x 170 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Graphic-inspired-painting-with-oil-on-canvas-by-Dresden-Germany-based-artist-HG-Griese-90-x-170-cm-created-in-2012.jpg")
-i3 = Item.create(title: "Auslöser", dimensions: "1/3 – 80 x 60 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Ausl%C3%B6ser-1-3-80-x-60-cm-oil-on-canvas-created-in-2011.jpg")
-
-
-#I28
-i4 = Item.create(title: "JAYJAY", dimensions: "48 x 36in", medium: "Oil Painting", price: "4000", artist_id: 28, category_id: 1, url: "http://www.valcomnews.com/wp-content/uploads/2013/05/Harvey_No_142-300x300.jpg")
-
-#K29
-i7 = Item.create(title: "Nanumaga", dimensions: "48 x 36in", medium: "Watercolor and gouache on paper", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/Nanumaga-Artwork-created-with-watercolor-and-gouache-on-paper.jpg")
-i8 = Item.create(title: "Qeqertarsuaq", dimensions: "48 x 36in", medium: "Work with watercolor and ink on paper", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/Qeqertarsuaq-Work-with-watercolor-and-ink-on-paper.jpg")
-i9 = Item.create(title: "Abstract N°", dimensions: "48 x 36in", medium: "Oil Paint", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/abstract-N%C2%B0-1067-Minimalist-artwork-with-oil-on-paper.jpg")
-
-
-#O30
-i10 = Item.create(title: "California King", dimensions: "97 3/5 × 79 9/10 × 136 3/5 in", medium: "Wood, Steel, Mattress", price: "400000", artist_id: 30, category_id: 2, url: "https://s-media-cache-ak0.pinimg.com/736x/b6/9e/69/b69e69821ae492a38b060709188385f8.jpg")
-i11 = Item.create(title: "A Hinge", dimensions: "98 2/5 × 236 1/5 × 77 1/5 in", medium: "Pine and Steel", price: "400000", artist_id: 30, category_id: 2, url: "http://www.museum-ludwig.de/typo3temp/_processed_/csm_OscarTuazon_MuseumLudwig__15__01_2a2791f110.jpg")
-i12 = Item.create(title: "Door/Table", dimensions: "83 1/10 × 6 4/5 × 32 1/10 in", medium: "Found door, concrete, steel", price: "400000", artist_id: 30, category_id: 2, url: "https://d32dm0rphc51dk.cloudfront.net/Z11hvijoG2qskhbN9MUw3A/large.jpg")
-
-
-#Q31
-i13 = Item.create(title: "Estructura 30", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "3400", artist_id: 31, category_id: 7, url: "http://galeriaenriqueguerrero.com/wp-content/uploads/2012/07/QO-7633-Estructura-24.jpg")
-i14 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "4040", artist_id: 31, category_id: 7, url: "http://api.ning.com/files/xUC*FNH859ExuYMGnkSApALPW6LrL857knfaDLBtm17dzJKknjG26n5cXRe0ytae2lc3ORBXIBbulW4FsQik7OYRbnBfZ1cSV45f3Vt03lk_/Quirarte_Ornelas_Ac_32.jpg")
-i15 = Item.create(title: "Structure - Wall", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "4200", artist_id: 31, category_id: 7, url: "http://api.ning.com/files/qNVxUAwLELbxgUCfm-Jk*G0JFqf35mLBYxH7EQcUqkYI3aRqCGUqLh1rq1wEkkLS4qUS5Z4RMqRvjvtkB3I9kEXdbnOOVOTlNwnCChbLBKE_/Quirarte_Ornelas_i_c_11.jpg")
-
-
-#U32
-i16 = Item.create(title: "Desperate romantics", dimensions: "39 2/5 × 47 1/5 in", medium: "Photography", price: "1000", artist_id: 32, category_id: 4, url: "https://s-media-cache-ak0.pinimg.com/736x/f5/e5/a0/f5e5a0972849f5c6c3f311eb30fd0216.jpg")
-i17 = Item.create(title: "The Awakening", dimensions: "39 2/5 × 47 1/5 in", medium: "Staged Photo", price: "1000", artist_id: 32, category_id: 4, url: "https://maverickcult.files.wordpress.com/2015/01/russian-fairy-tales-surreal-photograpjhy-uldus-bakhtiozina-16.jpg")
-i18 = Item.create(title: "Desperate romantics 2", dimensions: "39 2/5 × 47 1/5 in", medium: "Staged Photo", price: "1000", artist_id: 32, category_id: 4, url: "https://tedconfblog.files.wordpress.com/2014/04/5.jpg?w=900&h=701")
-
-
-#Y33
-i19 = Item.create(title: "Liminal IV", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Yang-Cao-Art-%E2%80%93-Liminal-IV-%E2%80%93-another-painting-of-the-series.jpg")
-i20 = Item.create(title: "Liminal XV", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Liminal-XV-%E2%80%93-painting-by-Toronto-based-artist-Yang-Cao.jpg")
-i21 = Item.create(title: "Liminal XVI", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Liminal-XVI-%E2%80%93-heads-in-the-clouds.jpg")
+# 
+# a1 = Artist.create(url: "https://image.jimcdn.com/app/cms/image/transf/dimension=667x10000:format=jpg/path/sf8c4de2fe243c38e/image/i300b24c7883d034c/version/1371139593/h-g-griese.jpg", first_name: "H. G.", last_name: "Griese",e artist_description: "The German artist saw the light of day back in 1964 in Dresden, Germany where he still lives. After studying at the Hochschule für Bildende Künste Dresden (HfbK) from 1987 – 1995, he started to work as a painter and graphic artist. His artistic style is strongly influenced by classic paintings, comics, and his passion for clear architectural and graphic shapes. The German artist skilfully combines figurative representations with graphic elements. Determining lines and geometric shapes with a formal objectivity go along with ironic as well as exhilarating or sometimes almost cynical motives.")
+# a2 = Artist.create(url: "http://www.valcomnews.com/wp-content/uploads/2013/05/Harvey%E2%80%93Koo.JPG", first_name: "Ian", last_name: "Harvey", artist_description: "Ian Harvey was born and raised in Boston. He currently lives and works in Sacramento, California where he is a Professor of Art at California State University.")
+# a3 = Artist.create(url: "http://www.thepalettepages.com/wp-content/uploads/2014/05/palette.jpg", first_name: "Koen", last_name: "Lybaert", artist_description: "Koen Lybaert was born in 1965 in Wilrijk, Belgium. He is a contemporary artist who creates abstract paintings mainly with oil or watercolor on paper or canvas. His technique consists of careful layering that creates a subtle mixture of overlapping colors and shapes. The paintings show an abstract view of the natural landscapes around him. Koen Lybaert is mostly inspired by forests, lakes, mountains, the sea, and desolate landscapes. The contemporary paintings are based on his own photographs.")
+# a4 = Artist.create(url: "http://images.vogue.it/Storage/Assets/Crops/21576/10/20919/Oscar-Tuazon_784x0.jpg", first_name: "Oscar", last_name: "Tuazon", artist_description: "In speaking about his architectonic sculptures and installations, Oscar Tuazon says, “I hope that the effect of my work is mostly physical. That’s what I like—walking through something, having an experience of the weight of things, or an experience of balance.” Tuazon, who studied architecture and urban studies and has assisted Vito Acconci in his architectural endeavors, is inspired by what he calls “outlaw architecture” and the way in which inhabitation redefines the form of an environment. His works are pared-down structures made from natural and industrial materials; this frequently includes wood, concrete, metals, and light fixtures, configured in such a way that works both with and against their entropic qualities.")
+# a5 = Artist.create(url: "http://www.portavoz.tv/wp-content/uploads/2011/10/poster-Q-O.jpg", first_name: "Quirarte y", last_name: "Ornelas", artist_description: "")
+# a6 = Artist.create(url: "http://static.boredpanda.com/blog/wp-content/uploads/2015/01/russian-fairy-tales-surreal-photograpjhy-uldus-bakhtiozina-2.jpg", first_name: "uldus", last_name: "", artist_description: "Russian-based photographer and artist")
+# a7 = Artist.create(url: "http://www.artoronto.ca/wp-content/uploads/2015/08/rsz_image_9.jpg", first_name: "Yang", last_name: "Cao", artist_description: "His work is undoubtedly characterized by a figurative painting style with a vivid approach. The masterfully painted clouds look fluffy and three-dimensional. The expressions can vary from darkness and hopelessness to absolute joy. Especially the clouds are responsible for the different moods of the paintins. Some were painted very softly with very bright colors. They seem to dissolve while others appear to be very tight and some are small thunderstorms painted with a dark color and a flash. Also the background color as well as the body language of each character has a strong influence on the mood of each image.")
+#
+#
+#
+# #seeding artists
+# ##LAST ARTIST : 26
+# #i6 = Item.create(title: "", dimensions: "48 x 36in", medium: "Oil on stitched cotton batting", price: "4000", artist_id: 22, category_id: 1, url: "")
+# #a2 = Artist.create(url: "", first_name: "", last_name: "", artist_description: "")
+#
+#
+# ##H27
+# i1 = Item.create(title: "Painting by Dresden", dimensions: "90 x 170 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Painting-by-Dresden-Germany-based-artist-HG-Griese.jpg")
+# i2 = Item.create(title: "Graphic of Dresden", dimensions: "90 x 170 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Graphic-inspired-painting-with-oil-on-canvas-by-Dresden-Germany-based-artist-HG-Griese-90-x-170-cm-created-in-2012.jpg")
+# i3 = Item.create(title: "Auslöser", dimensions: "1/3 – 80 x 60 cm", medium: "Oil on canvas", price: "4000", artist_id: 27, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2014/07/Ausl%C3%B6ser-1-3-80-x-60-cm-oil-on-canvas-created-in-2011.jpg")
+#
+#
+# #I28
+# i4 = Item.create(title: "JAYJAY", dimensions: "48 x 36in", medium: "Oil Painting", price: "4000", artist_id: 28, category_id: 1, url: "http://www.valcomnews.com/wp-content/uploads/2013/05/Harvey_No_142-300x300.jpg")
+#
+# #K29
+# i7 = Item.create(title: "Nanumaga", dimensions: "48 x 36in", medium: "Watercolor and gouache on paper", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/Nanumaga-Artwork-created-with-watercolor-and-gouache-on-paper.jpg")
+# i8 = Item.create(title: "Qeqertarsuaq", dimensions: "48 x 36in", medium: "Work with watercolor and ink on paper", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/Qeqertarsuaq-Work-with-watercolor-and-ink-on-paper.jpg")
+# i9 = Item.create(title: "Abstract N°", dimensions: "48 x 36in", medium: "Oil Paint", price: "1000", artist_id: 29, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2015/06/abstract-N%C2%B0-1067-Minimalist-artwork-with-oil-on-paper.jpg")
+#
+#
+# #O30
+# i10 = Item.create(title: "California King", dimensions: "97 3/5 × 79 9/10 × 136 3/5 in", medium: "Wood, Steel, Mattress", price: "400000", artist_id: 30, category_id: 2, url: "https://s-media-cache-ak0.pinimg.com/736x/b6/9e/69/b69e69821ae492a38b060709188385f8.jpg")
+# i11 = Item.create(title: "A Hinge", dimensions: "98 2/5 × 236 1/5 × 77 1/5 in", medium: "Pine and Steel", price: "400000", artist_id: 30, category_id: 2, url: "http://www.museum-ludwig.de/typo3temp/_processed_/csm_OscarTuazon_MuseumLudwig__15__01_2a2791f110.jpg")
+# i12 = Item.create(title: "Door/Table", dimensions: "83 1/10 × 6 4/5 × 32 1/10 in", medium: "Found door, concrete, steel", price: "400000", artist_id: 30, category_id: 2, url: "https://d32dm0rphc51dk.cloudfront.net/Z11hvijoG2qskhbN9MUw3A/large.jpg")
+#
+#
+# #Q31
+# i13 = Item.create(title: "Estructura 30", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "3400", artist_id: 31, category_id: 7, url: "http://galeriaenriqueguerrero.com/wp-content/uploads/2012/07/QO-7633-Estructura-24.jpg")
+# i14 = Item.create(title: "Untitled", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "4040", artist_id: 31, category_id: 7, url: "http://api.ning.com/files/xUC*FNH859ExuYMGnkSApALPW6LrL857knfaDLBtm17dzJKknjG26n5cXRe0ytae2lc3ORBXIBbulW4FsQik7OYRbnBfZ1cSV45f3Vt03lk_/Quirarte_Ornelas_Ac_32.jpg")
+# i15 = Item.create(title: "Structure - Wall", dimensions: "48 x 36in", medium: "Pencil Drawing", price: "4200", artist_id: 31, category_id: 7, url: "http://api.ning.com/files/qNVxUAwLELbxgUCfm-Jk*G0JFqf35mLBYxH7EQcUqkYI3aRqCGUqLh1rq1wEkkLS4qUS5Z4RMqRvjvtkB3I9kEXdbnOOVOTlNwnCChbLBKE_/Quirarte_Ornelas_i_c_11.jpg")
+#
+#
+# #U32
+# i16 = Item.create(title: "Desperate romantics", dimensions: "39 2/5 × 47 1/5 in", medium: "Photography", price: "1000", artist_id: 32, category_id: 4, url: "https://s-media-cache-ak0.pinimg.com/736x/f5/e5/a0/f5e5a0972849f5c6c3f311eb30fd0216.jpg")
+# i17 = Item.create(title: "The Awakening", dimensions: "39 2/5 × 47 1/5 in", medium: "Staged Photo", price: "1000", artist_id: 32, category_id: 4, url: "https://maverickcult.files.wordpress.com/2015/01/russian-fairy-tales-surreal-photograpjhy-uldus-bakhtiozina-16.jpg")
+# i18 = Item.create(title: "Desperate romantics 2", dimensions: "39 2/5 × 47 1/5 in", medium: "Staged Photo", price: "1000", artist_id: 32, category_id: 4, url: "https://tedconfblog.files.wordpress.com/2014/04/5.jpg?w=900&h=701")
+#
+#
+# #Y33
+# i19 = Item.create(title: "Liminal IV", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Yang-Cao-Art-%E2%80%93-Liminal-IV-%E2%80%93-another-painting-of-the-series.jpg")
+# i20 = Item.create(title: "Liminal XV", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Liminal-XV-%E2%80%93-painting-by-Toronto-based-artist-Yang-Cao.jpg")
+# i21 = Item.create(title: "Liminal XVI", dimensions: "48 x 36in", medium: "Paint", price: "4000", artist_id: 33, category_id: 1, url: "http://weandthecolor.com/wp-content/uploads/2016/01/Liminal-XVI-%E2%80%93-heads-in-the-clouds.jpg")
