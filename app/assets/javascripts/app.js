@@ -21,9 +21,7 @@ $(".hover").on ('mouseenter',function(){
           $(this).addClass("active");
      });
 
-
-
-
+// $('[data-toggle="popover"]').popover();
 
 
   var pageDivider = document.getElementsByClassName('.page-divider');

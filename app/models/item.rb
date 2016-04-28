@@ -8,7 +8,7 @@ class Item < ActiveRecord::Base
   has_many :deviseusers, :through => :items_deviseusers
 
   def self.randomizer
-    offset = rand(Item.count)
+    offset = rand(10)
     rand_record = Item.offset(offset)[0..8]
   end
 end

@@ -3,19 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>ONE: EXCLUSIVE ART</title>
-
   <!-- LINKED CSS FILES -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-
-
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
   <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
@@ -39,14 +33,14 @@
               <li><%= link_to "Log Out", destroy_deviseuser_session_path, method: :delete %></li>
         <% else %>
         <ul class="nav navbar-nav navbar-right">
-        <li>
-        <%= link_to "Log In", new_deviseuser_session_path %>
-        </li>
-        <li>
-        <%= link_to "Sign Up", new_deviseuser_registration_path %>
-        </li>
+          <li>
+          <%= link_to "Log In", new_deviseuser_session_path %>
+          </li>
+          <li>
+          <%= link_to("Sign Up", new_deviseuser_registration_path, :class => "popover-signup", :rel => "popover", :tabindex => "0", :role => "button" , :title => "Sign up for more!", :"data-trigger" => "focus", :"data-content" => "Want to add these pieces to your collection? Sign up to experience what the ONE APP has to offer.")%>
+          </li>
+        </ul>
         <% end %>
-</ul>
       </ul>
     </div>
     </div>

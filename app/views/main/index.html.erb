@@ -48,8 +48,6 @@
 </div>
 
 <div class="row">
-
-
   <% @exclusives.each do |i| %>
   <div class="col-lg-4 hover">
   <% artist_id = i.artist_id %>
@@ -64,5 +62,4 @@
   </div>
   <% end %>
 </div>
-
-
+<%= javascript_include_tag "index" %>

@@ -72,22 +72,22 @@
             <script src="https://checkout.stripe.com/v2/checkout.js"></script>
             <script src="https://raw.githubusercontent.com/nstares0/OneApp/master/app/assets/images/one-logo-avatar-02.png"></script>
             <script>
-            $(document).ready(function() {
-                $('.pay-button').on('click', function(event) {
-                    event.preventDefault();
+              $(document).ready(function() {
+                  $('.pay-button').on('click', function(event) {
+                      event.preventDefault();
 
-                    var $button = $(this),
-                        $form = $button.parents('form');
+                      var $button = $(this),
+                          $form = $button.parents('form');
 
-                    var opts = $.extend({}, $button.data(), {
-                        token: function(result) {
-                            $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
-                        }
-                    });
+                      var opts = $.extend({}, $button.data(), {
+                          token: function(result) {
+                              $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+                          }
+                      });
 
-                    StripeCheckout.open(opts);
-                });
-            });
+                      StripeCheckout.open(opts);
+                  });
+              });
             </script>
           <% end %> <!-- Form -->
         <% end %> <!-- If statement -->
@@ -96,9 +96,3 @@
     </div> <!-- Row -->
   </div> <!-- Pannel Body -->
 </div> <!-- Pannel Pannel Deafult -->
-
-
-
-
-
-
